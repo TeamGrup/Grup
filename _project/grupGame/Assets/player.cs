@@ -48,8 +48,8 @@ public class player : MonoBehaviour {
             jumpTimer = Time.time + jumpDelay;
         }
         direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        animator.SetFloat("horizontal", direction.x);
-        animator.SetFloat("vertical", direction.y);
+        animator.SetFloat("horizontal", Mathf.Abs(direction.x));
+        animator.SetFloat("vertical", Mathf.Abs(direction.y));
     }
 
     void FixedUpdate() {
