@@ -50,6 +50,8 @@ public class player : MonoBehaviour {
         direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         animator.SetFloat("horizontal", Mathf.Abs(direction.x));
         animator.SetFloat("vertical", Mathf.Abs(direction.y));
+
+
     }
 
     void FixedUpdate() {
