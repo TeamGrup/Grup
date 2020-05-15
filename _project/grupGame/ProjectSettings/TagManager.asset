@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Plant
   - FruitTree
+  - Fruit
   layers:
   - Default
   - TransparentFX
