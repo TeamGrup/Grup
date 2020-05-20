@@ -13,9 +13,13 @@ public class FruitBehavior : MonoBehaviour
 
     public Vector3 position = new Vector3(1.3f,0,0);
 
+    public Vector3 StartScale;
+
     public float CharacterFace;
 
     private float timer;
+
+    public float timeToDecay= 10f;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +31,7 @@ public class FruitBehavior : MonoBehaviour
         col = gameObject.GetComponent<BoxCollider2D>();
         col.enabled = false;
 
+        StartScale = transform.localScale;
 
         player = GameObject.Find("playerCub");
         CharacterFace = player.transform.right.x;
@@ -38,23 +43,18 @@ public class FruitBehavior : MonoBehaviour
     {   
         if(!IsHeld)
         {
-            timer += Time.deltaTime;
-
-            // 5 / scale
-            //  (timer / 5) / scale
-
-
+            timer += Time.smoothDeltaTime;
 
             Vector3 scale = transform.localScale;
-            Debug.Log((timer/5)/scale.x);
+            float decreaseSize = (timeToDecay-timer) / timeToDecay;
+            
+            scale.x = StartScale.x * decreaseSize;
+            scale.y = StartScale.y * decreaseSize;
 
-            // scale.x = scale.x/timer;
-            // scale.y = scale.y/timer;
-            // transform.localScale = scale;
+            transform.localScale = scale;
 
-            if(timer >= 5)
+            if(timer >= timeToDecay)
             {
-                Debug.Log("5 seconds");
                 player.GetComponent<FruitPick>().ObjectInWorld = null;
                 Destroy(gameObject);
             }

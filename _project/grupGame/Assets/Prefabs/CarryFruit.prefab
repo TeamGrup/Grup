@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 50983106341312478}
   - component: {fileID: 61009522139152762}
   - component: {fileID: 114259443301072192}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CarryFruit
   m_TagString: Fruit
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &61009522139152762
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -146,4 +146,6 @@ MonoBehaviour:
   col: {fileID: 0}
   player: {fileID: 0}
   position: {x: 1.3, y: 0, z: 0}
+  StartScale: {x: 0, y: 0, z: 0}
   CharacterFace: 0
+  timeToDecay: 30
