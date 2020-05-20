@@ -1052,13 +1052,13 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 512
-  maxSpeed: 7
-  linearDrag: 4
-  gravity: 1
-  fallMultiplier: 5
+  maxSpeed: 7.24
+  linearDrag: 14.99
+  gravity: 1.31
+  fallMultiplier: 5.46
   onGround: 0
-  groundLength: 0.6
-  colliderOffset: {x: 0, y: 0, z: 0}
+  groundLength: 0.96
+  colliderOffset: {x: 0.37, y: 0, z: 0}
 --- !u!50 &2008641595
 Rigidbody2D:
   serializedVersion: 4

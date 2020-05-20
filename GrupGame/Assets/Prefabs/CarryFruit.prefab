@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 50983106341312478}
   - component: {fileID: 61009522139152762}
   - component: {fileID: 114259443301072192}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: CarryFruit
   m_TagString: Fruit
   m_Icon: {fileID: 0}
