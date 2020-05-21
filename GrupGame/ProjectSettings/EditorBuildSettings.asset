@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/scene switch.unity
-    guid: 13ce0d8cae16f10419d6bc13b547fd48
-  - enabled: 1
     path: Assets/Scenes/ladderscene.unity
     guid: 5de3c7959894a7e4385cac07474da18a
   - enabled: 1

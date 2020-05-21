@@ -300,6 +300,7 @@ GameObject:
   m_Component:
   - component: {fileID: 175292643}
   - component: {fileID: 175292642}
+  - component: {fileID: 175292644}
   m_Layer: 0
   m_Name: backToSwtich
   m_TagString: Untagged
@@ -314,7 +315,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175292641}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 719b3c57cd7bb1a4aa66928058105923, type: 3}
   m_Name: 
@@ -333,6 +334,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &175292644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175292641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a90fb770cc7ec994f9904b210fe49155, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &193609244
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1381,8 +1394,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -258.4, y: 189}
-  m_SizeDelta: {x: 231.2, y: 30}
+  m_AnchoredPosition: {x: -374.35, y: 256.81}
+  m_SizeDelta: {x: 343.1, y: 95.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1980762474
 MonoBehaviour:
@@ -1415,7 +1428,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: press ESC to return
+  m_Text: "press 1 for movement scene\n         2 for trampolene scene\n         3
+    for picking fruit scene\n         4 for ladders and bridges scene"
 --- !u!222 &1980762475
 CanvasRenderer:
   m_ObjectHideFlags: 0
