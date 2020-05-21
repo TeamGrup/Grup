@@ -23,16 +23,15 @@ public class movement : MonoBehaviour
     void Update()
     {
         charMove = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        if (Input.GetButtonDown("Jump"))
+        {
+            Jump(jumpSpeed);
+        }
     }
 
     void FixedUpdate()
     {
         moveCharacter(charMove.x);
-
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            Jump(jumpSpeed);
-        }
     }
 
     //moves character left or right
