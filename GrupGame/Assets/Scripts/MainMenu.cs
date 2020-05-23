@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
+  AudioManager audioManager;
+
 
 
   public static bool isPaused = false;
