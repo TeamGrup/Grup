@@ -14,6 +14,9 @@ public class player : MonoBehaviour {
     public float jumpSpeed = 15f;
     public float jumpDelay = 0.25f;
     private float jumpTimer;
+    public bool canClimb = false;
+    public float climbModifier = 2.0f;
+
 
     [Header("Components")]
     public Rigidbody2D rb;
@@ -55,7 +58,7 @@ public class player : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        moveCharacter(direction.x);
+        moveCharacter(direction.x, direction.y);
         if(jumpTimer > Time.time && onGround){
             Jump();
         }
@@ -63,12 +66,20 @@ public class player : MonoBehaviour {
         modifyPhysics();
     }
 
-    void moveCharacter(float horizontal) {
+    void moveCharacter(float horizontal, float vertical) {
+        if (!canClimb)
+        {
+            vertical = 0f;
+        }
+
+        rb.AddForce(Vector2.up * vertical * moveSpeed * climbModifier);
+
         rb.AddForce(Vector2.right * horizontal * moveSpeed, ForceMode2D.Impulse);
 
         if ((horizontal > 0 && !facingRight) || (horizontal < 0 && facingRight)) {
             Flip();
         }
+
         if (Mathf.Abs(rb.velocity.x) > maxSpeed) {
             rb.velocity = new Vector2(Mathf.Sign(rb.velocity.x) * maxSpeed, rb.velocity.y);
         }
@@ -83,7 +94,7 @@ public class player : MonoBehaviour {
     void modifyPhysics() {
         bool changingDirections = (direction.x > 0 && rb.velocity.x < 0) || (direction.x < 0 && rb.velocity.x > 0);
 
-        if(onGround){
+        if(onGround || canClimb){
             if (Mathf.Abs(direction.x) < 0.4f || changingDirections) {
                 rb.drag = linearDrag;
             } else {
