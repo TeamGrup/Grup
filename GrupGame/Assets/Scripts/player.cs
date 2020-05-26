@@ -35,6 +35,7 @@ public class player : MonoBehaviour {
     public float groundLength = 0.6f;
     public Vector3 colliderOffset;
 
+    private Vector3 origin;
     // Temporary, possibly move to trampoline script
     public float trampolineSpeed = 20f;
     public int numberOfJumps = 0;
@@ -44,6 +45,7 @@ public class player : MonoBehaviour {
         rb = this.GetComponent<Rigidbody2D>();
 
         this.GetComponent<SpriteRenderer>().enabled = true;
+        origin = gameObject.transform.position;
     }
 
     // Update is called once per frame
@@ -60,6 +62,11 @@ public class player : MonoBehaviour {
         animator.SetFloat("horizontal", Mathf.Abs(direction.x));
         animator.SetFloat("vertical", Mathf.Abs(direction.y));
 
+        if (onGround)
+        {
+            numberOfJumps = 0;
+            trampolineSpeed = 20f;
+        }
 
     }
 
@@ -127,6 +134,12 @@ public class player : MonoBehaviour {
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position + colliderOffset, transform.position + colliderOffset + Vector3.down * groundLength);
         Gizmos.DrawLine(transform.position - colliderOffset, transform.position - colliderOffset + Vector3.down * groundLength);
+    }
+
+    public void ResetOrigin()
+    {
+        rb.velocity = new Vector2(0, 0);
+        gameObject.transform.position = origin;
     }
 
     // Added for temporary Trampoline action

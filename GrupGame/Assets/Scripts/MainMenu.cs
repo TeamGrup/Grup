@@ -55,9 +55,7 @@ public class MainMenu : MonoBehaviour {
 
   }
 
-  public void LoadMain() {
-    SceneManager.LoadScene(0);
-  }
+  
 
   public void BackMenu() {
     Time.timeScale = 1f;
@@ -85,20 +83,28 @@ public class MainMenu : MonoBehaviour {
     levelSelectMenuUI.SetActive(true);
   }
 
-  public void LoadLadderScene() {
-    Time.timeScale = 1f;
+  public void LoadMain() {
+    ResumeGame();
+    SceneManager.LoadScene(0);
+  }
+
+  public void LoadIntro() {
+    ResumeGame();
+
     SceneManager.LoadScene(1);
   }
-  public void LoadMovementScene() {
-    Time.timeScale = 1f;
+  public void LoadLevelOne() {
+    ResumeGame();
+
     SceneManager.LoadScene(2);
   }
-  public void LoadPlantPickScene() {
-    Time.timeScale = 1f;
+  public void LoadLevelTwo() {
+    ResumeGame();
+
     SceneManager.LoadScene(3);
   }
-  public void LoadTrampolineScene() {
-    Time.timeScale = 1f;
+  public void LoadLevelThree() {
+    ResumeGame();
     SceneManager.LoadScene(4);
   }
 
