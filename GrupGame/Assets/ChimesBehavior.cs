@@ -7,6 +7,6 @@ public class ChimesBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.GetComponent<AudioSource>().PlayDelayed(3);
+        this.GetComponent<AudioSource>().PlayDelayed(1f);
     }
 }
