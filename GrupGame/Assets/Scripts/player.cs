@@ -141,7 +141,7 @@ public class player : MonoBehaviour {
                 numberOfJumps++;
                 if (numberOfJumps < 5) //player jumps higher the more they bounce
                 {
-                    trampolineSpeed += 1;
+                    trampolineSpeed += 4;
                 }
             //}
         }
