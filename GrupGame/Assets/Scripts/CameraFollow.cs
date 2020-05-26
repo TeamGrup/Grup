@@ -25,11 +25,11 @@ public class CameraFollow : MonoBehaviour
 
         Vector3 desiredPosition = targetToFollow.position + offset;
 
-        Vector3 wallHit = new Vector3(Mathf.Clamp(desiredPosition.x,xClamp,3f)
-                                        ,Mathf.Clamp(desiredPosition.y,yClamp,4f)
+        Vector3 wallHit = new Vector3(Mathf.Clamp(desiredPosition.x,-3,xClamp)
+                                        ,Mathf.Clamp(desiredPosition.y,-4,yClamp)
                                         ,desiredPosition.z);
 
-        Vector3 smoothPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed); // ?need to fix clamping
+        Vector3 smoothPosition = Vector3.Lerp(transform.position, wallHit, smoothSpeed); // ?need to fix clamping
         
         // if(Input.GetAxis("Vertical") < 0 && Input.GetAxis("Horizontal") == 0)
         // {
