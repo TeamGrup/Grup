@@ -9,10 +9,4 @@ public class ChimesBehavior : MonoBehaviour
     {
         this.GetComponent<AudioSource>().PlayDelayed(3);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

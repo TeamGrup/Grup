@@ -15,13 +15,14 @@ public class WalkSoundBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetAxis("Horizontal") > 0)
+        if(Mathf.Abs(Input.GetAxis("Horizontal")) > .5)
         {
-            walkAudio.Play();
+            if(!walkAudio.isPlaying)
+                walkAudio.PlayDelayed(.15f);
         }
-        // else
-        // {
-        //     walkAudio.Pause();
-        // }
+        else
+        {
+            walkAudio.Pause();
+        }
     }
 }
