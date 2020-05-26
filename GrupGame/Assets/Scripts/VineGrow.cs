@@ -12,6 +12,7 @@ using UnityEngine;
 public class VineGrow : MonoBehaviour {
   BoxCollider2D bc2D;
   bool growable = false;
+  bool grown = false;
 
   // inspector values
   [Header("Growth Values")]
@@ -38,9 +39,10 @@ public class VineGrow : MonoBehaviour {
 
   private void Update() {
     if (Input.GetKeyDown(KeyCode.E)) {
-      if (growable) {
+      if (growable && !grown) {
         Debug.Log("Growing Vine");
         StartCoroutine(Curve(0));
+        grown = true;
       }
     }
   }
