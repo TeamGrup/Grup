@@ -8,6 +8,7 @@ TagManager:
   - Fruit
   - FruitTree
   - Vine
+  - Pollutant
   layers:
   - Default
   - TransparentFX

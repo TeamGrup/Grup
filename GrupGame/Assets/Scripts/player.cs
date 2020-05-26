@@ -38,6 +38,8 @@ public class player : MonoBehaviour {
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
+
+        this.GetComponent<SpriteRenderer>().enabled = true;
     }
 
     // Update is called once per frame
