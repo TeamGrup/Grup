@@ -8,15 +8,14 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Leaves
-  m_Shader: {fileID: 4800000, guid: c4edd00ff2db5b24391a4fcb1762e459, type: 3}
+  m_Shader: {fileID: 4800000, guid: 650dd9526735d5b46b79224bc6e94025, type: 3}
   m_ShaderKeywords: _ALPHATEST_ON _AXF_BRDF_TYPE_SVBRDF _BLENDMODE_ALPHA _COLORADDSUBDIFF_ON
     _NORMALMAP_TANGENT_SPACE _REQUIRE_UV2 _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
-  stringTagMap:
-    RenderType: Transparent
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses:
   - DistortionVectors
   - MOTIONVECTORS
@@ -324,6 +323,7 @@ Material:
     - _SVBRDF_BRDFVariants: 0
     - _SVBRDF_HeightMapMaxMM: 0
     - _SVBRDF_SpecularLobeMapScale: 1
+    - _SampleGI: 0
     - _Shininess: 1
     - _ShiverDirectionality: 0.5
     - _ShiverDrag: 0.2
