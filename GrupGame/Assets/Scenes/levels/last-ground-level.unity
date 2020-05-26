@@ -2288,7 +2288,7 @@ GameObject:
   - component: {fileID: 419468359}
   - component: {fileID: 419468358}
   - component: {fileID: 419468357}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: trampoline square
   m_TagString: Trampoline
   m_Icon: {fileID: 0}
