@@ -35,6 +35,10 @@ public class player : MonoBehaviour {
     public float groundLength = 0.6f;
     public Vector3 colliderOffset;
 
+    // Temporary, possibly move to trampoline script
+    public float trampolineSpeed = 20f;
+    public int numberOfJumps = 0;
+
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
@@ -123,5 +127,31 @@ public class player : MonoBehaviour {
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position + colliderOffset, transform.position + colliderOffset + Vector3.down * groundLength);
         Gizmos.DrawLine(transform.position - colliderOffset, transform.position - colliderOffset + Vector3.down * groundLength);
+    }
+
+    // Added for temporary Trampoline action
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        //if player collides with a trampoline
+        if (col.gameObject.tag == "Trampoline")
+        {
+            //if (rb.position.x >= -1.2 && rb.position.y >= -2.0) //checks if player if above flower
+            //{
+                TrampolineJump(trampolineSpeed); //calls jump function
+                numberOfJumps++;
+                if (numberOfJumps < 5) //player jumps higher the more they bounce
+                {
+                    trampolineSpeed += 1;
+                }
+            //}
+        }
+    }
+
+    // Added for temporary Trampoline action
+    void TrampolineJump(float charJumpSpeed)
+    {
+        rb.velocity = new Vector2(rb.velocity.x, 0);
+        rb.AddForce(Vector2.up * charJumpSpeed, ForceMode2D.Impulse);
+        jumpTimer = 0;
     }
 }
