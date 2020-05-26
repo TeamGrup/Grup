@@ -18,7 +18,15 @@ public class LadderBehavior : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
-            collision.gameObject.GetComponent<PlayerBehavior>().canClimb = true;
+            collision.gameObject.GetComponent<Rigidbody2D>().velocity *= 0f;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Player"))
+        {
+            collision.gameObject.GetComponent<player>().canClimb = true;
         }
     }
 
@@ -26,7 +34,7 @@ public class LadderBehavior : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
-            collision.gameObject.GetComponent<PlayerBehavior>().canClimb = false;
+            collision.gameObject.GetComponent<player>().canClimb = false;
         }
     }
 }
