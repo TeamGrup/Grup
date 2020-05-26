@@ -29,8 +29,6 @@ public class CameraFollow : MonoBehaviour
                                         ,Mathf.Clamp(desiredPosition.y,yClamp,4f)
                                         ,desiredPosition.z);
 
-        Debug.Log(wallHit);
-
         Vector3 smoothPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed); // ?need to fix clamping
         
         // if(Input.GetAxis("Vertical") < 0 && Input.GetAxis("Horizontal") == 0)
