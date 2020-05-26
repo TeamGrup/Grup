@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/levels/intro_FallIn.unity
     guid: 192c184d48ab23c45ab546416c7c1283
+  - enabled: 1
+    path: Assets/Scenes/levels/water-level.unity
+    guid: 8ed684254578fb744b5999283f8e8d40
   m_configObjects: {}
