@@ -73,8 +73,8 @@ public class Plant : MonoBehaviour {
 
   }
 
-  private void FixedUpdate() {
-    
+  public void Polluted(bool isPolluted) {
+    polluted = isPolluted;
   }
 
 
