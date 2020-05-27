@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 917426986467170754}
   - component: {fileID: 917426986467170755}
   - component: {fileID: 917426986467170756}
-  - component: {fileID: 917426986467170757}
+  - component: {fileID: 7087073701857069583}
   m_Layer: 0
-  m_Name: ground
+  m_Name: ground_pollutant
   m_TagString: Pollutant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -119,6 +119,7 @@ MonoBehaviour:
   amplitude: 0.5
   frequency: 1
   pushbackForce: 10
+  effectRadius: 10
 --- !u!60 &917426986467170756
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -208,8 +209,8 @@ PolygonCollider2D:
       - {x: -0.01, y: -0.48499998}
       - {x: 0.08, y: -0.565}
       - {x: 0.16, y: -0.545}
---- !u!70 &917426986467170757
-CapsuleCollider2D:
+--- !u!58 &7087073701857069583
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -221,6 +222,6 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0000009536743, y: -0.00000023841858}
-  m_Size: {x: 2.69, y: 2.04}
-  m_Direction: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 8.58
