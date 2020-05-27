@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2717,7 +2717,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   growSpeed: 0.3
-  useParticleSystem: 1
+  useParticleSystem: 0
   growParticleSystem: {fileID: 2606911964881052585, guid: c3429a910c33a2b4bb72aadfec8fc65c,
     type: 3}
 --- !u!61 &1221596278
