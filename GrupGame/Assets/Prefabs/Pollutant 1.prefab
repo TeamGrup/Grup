@@ -163,4 +163,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.4
   frequency: 0.5
-  pushbackForce: 10
+  pushbackForce: 5

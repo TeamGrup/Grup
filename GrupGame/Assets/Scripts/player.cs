@@ -34,30 +34,31 @@ public class player : MonoBehaviour {
     public bool onGround = false;
     public float groundLength = 0.6f;
     public Vector3 colliderOffset;
+    public bool hitSomething = false;
 
     private Vector3 origin;
     // Temporary, possibly move to trampoline script
     public float trampolineSpeed = 20f;
     public int numberOfJumps = 0;
 
+    // Used to prevent character sticking to wall
+    private float originalObjectFriction;
+
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
 
         this.GetComponent<SpriteRenderer>().enabled = true;
+
         origin = gameObject.transform.position;
     }
 
     // Update is called once per frame
     void Update() {
-        
-
         bool wasOnGround = onGround;
-        onGround = Physics2D.Raycast(transform.position + colliderOffset, Vector2.down, groundLength, groundLayer) || Physics2D.Raycast(transform.position - colliderOffset, Vector2.down, groundLength, groundLayer);
 
-        if(Input.GetButtonDown("Jump")){
-            jumpTimer = Time.time + jumpDelay;
-        }
+        DetectJump();
+
         direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         animator.SetFloat("horizontal", Mathf.Abs(direction.x));
         animator.SetFloat("vertical", Mathf.Abs(direction.y));
@@ -79,16 +80,34 @@ public class player : MonoBehaviour {
         modifyPhysics();
     }
 
+    void DetectJump()
+    {
+        // These detect if the player is currently on the ground
+        var RightRaycast = Physics2D.Raycast(transform.position + colliderOffset, Vector2.down, groundLength, groundLayer);
+        var LeftRaycast = Physics2D.Raycast(transform.position - colliderOffset, Vector2.down, groundLength, groundLayer);
+
+        // If either are on ground, jump is good to go
+        onGround = RightRaycast || LeftRaycast;
+
+        // Allows player to input jump button before touchdown, and still jump
+        // jumpTimer user in fixedUpdate
+        if(Input.GetButtonDown("Jump")){
+            jumpTimer = Time.time + jumpDelay;
+        }
+    }
+
     void moveCharacter(float horizontal, float vertical) {
+        // If the character is not able to climb, then no vertical force will be applied.
         if (!canClimb)
         {
             vertical = 0f;
         }
-
         rb.AddForce(Vector2.up * vertical * moveSpeed * climbModifier);
 
+        // Controls the players forwared movement
         rb.AddForce(Vector2.right * horizontal * moveSpeed, ForceMode2D.Impulse);
 
+        // When changing direction, flip where player is facing
         if ((horizontal > 0 && !facingRight) || (horizontal < 0 && facingRight)) {
             Flip();
         }
@@ -96,6 +115,8 @@ public class player : MonoBehaviour {
         if (Mathf.Abs(rb.velocity.x) > maxSpeed) {
             rb.velocity = new Vector2(Mathf.Sign(rb.velocity.x) * maxSpeed, rb.velocity.y);
         }
+
+
     }
 
     void Jump(){
@@ -107,21 +128,25 @@ public class player : MonoBehaviour {
     void modifyPhysics() {
         bool changingDirections = (direction.x > 0 && rb.velocity.x < 0) || (direction.x < 0 && rb.velocity.x > 0);
 
-        if(onGround || canClimb){
+        if((onGround && rb.velocity.y == 0) || canClimb){
             if (Mathf.Abs(direction.x) < 0.4f || changingDirections) {
                 rb.drag = linearDrag;
             } else {
                 rb.drag = 0f;
             }
             rb.gravityScale = 0;
-        }else{
+        }
+        else{
             rb.gravityScale = gravity;
             rb.drag = linearDrag * 0.15f;
+
             if(rb.velocity.y < 1){
                 rb.gravityScale = gravity * fallMultiplier;
-            }else if(rb.velocity.y > 0 && !Input.GetButton("Jump")){
+            }
+            else if(rb.velocity.y > 0 && !Input.GetButton("Jump")){
                 rb.gravityScale = gravity * (fallMultiplier / 2);
             }
+
         }
     }
 
@@ -145,8 +170,11 @@ public class player : MonoBehaviour {
     // Added for temporary Trampoline action
     void OnCollisionEnter2D(Collision2D col)
     {
+        var objectCollided = col.gameObject;
+        var objectTag = objectCollided.tag;
+
         //if player collides with a trampoline
-        if (col.gameObject.tag == "Trampoline")
+        if (objectTag == "Trampoline")
         {
             //if (rb.position.x >= -1.2 && rb.position.y >= -2.0) //checks if player if above flower
             //{
@@ -157,7 +185,18 @@ public class player : MonoBehaviour {
                     trampolineSpeed += 4;
                 }
             //}
+        }else{
+            // originalObjectFriction = objectCollided.GetComponent<Collider2D>().friction;
+            // objectCollided.GetComponent<Collider2D>().friction = 0;
+            // var originalObjectFriction = gameObject.GetComponent<Collider2D>().friction;
+            // gameObject.GetComponent<Collider2D>().friction = 0;
         }
+    }
+
+    void OnCollisionExit2D(Collision2D col)
+    {
+        // var objectCollided = col.gameObject.GetComponent<Collider2D>();
+
     }
 
     // Added for temporary Trampoline action
