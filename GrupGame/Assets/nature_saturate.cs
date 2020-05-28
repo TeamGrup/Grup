@@ -59,22 +59,6 @@ public class nature_saturate : MonoBehaviour {
     childCount = childObjects.Count;
   }
 
-  /*
-  private void OnTriggerEnter2D(Collider2D collision) {
-    if (collision.gameObject.tag == "PEA") {
-      Debug.Log("Polluted!");
-      polluted = true;
-    }
-  }
-
-  private void OnTriggerExit2D(Collider2D collision) {
-    if (collision.gameObject.tag == "PEA") {
-      Debug.Log("Clean!");
-      polluted = false;
-    }
-  }
-  */
-
   private void OnTriggerStay2D(Collider2D collision) {
     if (collision.gameObject.tag == "PEA") {
       Debug.Log("Stay!");
