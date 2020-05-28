@@ -23,8 +23,6 @@ public class PollutantBehavior : MonoBehaviour {
     // Store the starting position & rotation of the object
     posOffset = transform.position;
     // pushbackForce = Mathf.Abs(pushbackForce);
-    Debug.Log("starting");
-    
   }
 
   // Update is called once per frame

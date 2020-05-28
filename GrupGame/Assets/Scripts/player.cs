@@ -50,14 +50,10 @@ public class player : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        
-
         bool wasOnGround = onGround;
-        onGround = Physics2D.Raycast(transform.position + colliderOffset, Vector2.down, groundLength, groundLayer) || Physics2D.Raycast(transform.position - colliderOffset, Vector2.down, groundLength, groundLayer);
 
-        if(Input.GetButtonDown("Jump")){
-            jumpTimer = Time.time + jumpDelay;
-        }
+        DetectJump();
+
         direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         animator.SetFloat("horizontal", Mathf.Abs(direction.x));
         animator.SetFloat("vertical", Mathf.Abs(direction.y));
@@ -77,18 +73,38 @@ public class player : MonoBehaviour {
         }
 
         modifyPhysics();
+        if(!onGround)
+            Debug.Log("Vel: " + rb.velocity);
+    }
+
+    void DetectJump()
+    {
+        // These detect if the player is currently on the ground
+        var RightRaycast = Physics2D.Raycast(transform.position + colliderOffset, Vector2.down, groundLength, groundLayer);
+        var LeftRaycast = Physics2D.Raycast(transform.position - colliderOffset, Vector2.down, groundLength, groundLayer);
+
+        // If either are on ground, jump is good to go
+        onGround = RightRaycast || LeftRaycast;
+
+        // Allows player to input jump button before touchdown, and still jump
+        // jumpTimer user in fixedUpdate
+        if(Input.GetButtonDown("Jump")){
+            jumpTimer = Time.time + jumpDelay;
+        }
     }
 
     void moveCharacter(float horizontal, float vertical) {
+        // If the character is not able to climb, then no vertical force will be applied.
         if (!canClimb)
         {
             vertical = 0f;
         }
-
         rb.AddForce(Vector2.up * vertical * moveSpeed * climbModifier);
 
+        // Controls the players forwared movement
         rb.AddForce(Vector2.right * horizontal * moveSpeed, ForceMode2D.Impulse);
 
+        // When changing direction, flip where player is facing
         if ((horizontal > 0 && !facingRight) || (horizontal < 0 && facingRight)) {
             Flip();
         }
@@ -96,6 +112,8 @@ public class player : MonoBehaviour {
         if (Mathf.Abs(rb.velocity.x) > maxSpeed) {
             rb.velocity = new Vector2(Mathf.Sign(rb.velocity.x) * maxSpeed, rb.velocity.y);
         }
+
+
     }
 
     void Jump(){
@@ -107,21 +125,25 @@ public class player : MonoBehaviour {
     void modifyPhysics() {
         bool changingDirections = (direction.x > 0 && rb.velocity.x < 0) || (direction.x < 0 && rb.velocity.x > 0);
 
-        if(onGround || canClimb){
+        if((onGround && rb.velocity.y == 0) || canClimb){
             if (Mathf.Abs(direction.x) < 0.4f || changingDirections) {
                 rb.drag = linearDrag;
             } else {
                 rb.drag = 0f;
             }
             rb.gravityScale = 0;
-        }else{
+        }
+        else{
             rb.gravityScale = gravity;
             rb.drag = linearDrag * 0.15f;
+
             if(rb.velocity.y < 1){
                 rb.gravityScale = gravity * fallMultiplier;
-            }else if(rb.velocity.y > 0 && !Input.GetButton("Jump")){
+            }
+            else if(rb.velocity.y > 0 && !Input.GetButton("Jump")){
                 rb.gravityScale = gravity * (fallMultiplier / 2);
             }
+
         }
     }
 
