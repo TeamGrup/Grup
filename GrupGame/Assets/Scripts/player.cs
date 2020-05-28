@@ -34,15 +34,21 @@ public class player : MonoBehaviour {
     public bool onGround = false;
     public float groundLength = 0.6f;
     public Vector3 colliderOffset;
+    public bool hitSomething = false;
 
     private Vector3 origin;
     // Temporary, possibly move to trampoline script
     public float trampolineSpeed = 20f;
     public int numberOfJumps = 0;
 
+    // Used to prevent character sticking to wall
+    private float originalObjectFriction;
+
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
+        var originalObjectFriction = gameObject.GetComponent<Collider2D>().friction;
+        Debug.Log("Fric: " + originalObjectFriction);
 
         this.GetComponent<SpriteRenderer>().enabled = true;
         origin = gameObject.transform.position;
@@ -73,8 +79,6 @@ public class player : MonoBehaviour {
         }
 
         modifyPhysics();
-        if(!onGround)
-            Debug.Log("Vel: " + rb.velocity);
     }
 
     void DetectJump()
@@ -167,8 +171,11 @@ public class player : MonoBehaviour {
     // Added for temporary Trampoline action
     void OnCollisionEnter2D(Collision2D col)
     {
+        var objectCollided = col.gameObject;
+        var objectTag = objectCollided.tag;
+
         //if player collides with a trampoline
-        if (col.gameObject.tag == "Trampoline")
+        if (objectTag == "Trampoline")
         {
             //if (rb.position.x >= -1.2 && rb.position.y >= -2.0) //checks if player if above flower
             //{
@@ -179,7 +186,18 @@ public class player : MonoBehaviour {
                     trampolineSpeed += 4;
                 }
             //}
+        }else{
+            // originalObjectFriction = objectCollided.GetComponent<Collider2D>().friction;
+            // objectCollided.GetComponent<Collider2D>().friction = 0;
+            // var originalObjectFriction = gameObject.GetComponent<Collider2D>().friction;
+            // gameObject.GetComponent<Collider2D>().friction = 0;
         }
+    }
+
+    void OnCollisionExit2D(Collision2D col)
+    {
+        // var objectCollided = col.gameObject.GetComponent<Collider2D>();
+
     }
 
     // Added for temporary Trampoline action

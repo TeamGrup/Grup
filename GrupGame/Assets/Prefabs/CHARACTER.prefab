@@ -275,6 +275,7 @@ MonoBehaviour:
   onGround: 0
   groundLength: 0.98
   colliderOffset: {x: 0.37, y: 0, z: 0}
+  hitSomething: 0
   trampolineSpeed: 20
   numberOfJumps: 0
 --- !u!61 &7777296062143010347
@@ -294,7 +295,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.8, y: 11.49}
+    oldSize: {x: 1.2, y: 1.82}
     newSize: {x: 1.2, y: 1.82}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
