@@ -153,6 +153,7 @@ GameObject:
   - component: {fileID: 7777296062143010349}
   - component: {fileID: 7777296062143010348}
   - component: {fileID: 7777296062143010347}
+  - component: {fileID: 958491718610117972}
   m_Layer: 10
   m_Name: CHARACTER
   m_TagString: Player
@@ -273,8 +274,8 @@ MonoBehaviour:
   gravity: 1.31
   fallMultiplier: 5.46
   onGround: 0
-  groundLength: 0.98
-  colliderOffset: {x: 0.37, y: 0, z: 0}
+  groundLength: 1.07
+  colliderOffset: {x: 0.47, y: 0, z: 0}
   hitSomething: 0
   trampolineSpeed: 20
   numberOfJumps: 0
@@ -304,6 +305,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1398764, y: 1.4028066}
   m_EdgeRadius: 0
+--- !u!70 &958491718610117972
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7777296062143010346}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.019880924, y: 0}
+  m_Size: {x: 1.1602379, y: 1.82}
+  m_Direction: 0
 --- !u!1 &7777296064047304548
 GameObject:
   m_ObjectHideFlags: 0
