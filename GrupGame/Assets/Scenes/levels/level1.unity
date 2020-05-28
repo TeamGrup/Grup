@@ -12796,31 +12796,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CHARACTER
       objectReference: {fileID: 0}
-    - target: {fileID: 7777296062143010347, guid: 199891f88a025414cb3f722ee55a678d,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7777296062143010347, guid: 199891f88a025414cb3f722ee55a678d,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.82
-      objectReference: {fileID: 0}
-    - target: {fileID: 7777296062143010347, guid: 199891f88a025414cb3f722ee55a678d,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0.21090443
-      objectReference: {fileID: 0}
-    - target: {fileID: 7777296062143010347, guid: 199891f88a025414cb3f722ee55a678d,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1.4028066
-      objectReference: {fileID: 0}
-    - target: {fileID: 7777296062143010347, guid: 199891f88a025414cb3f722ee55a678d,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 5c08cb8540f291b48ba127e7d3886787, type: 2}
     - target: {fileID: 7777296062143010348, guid: 199891f88a025414cb3f722ee55a678d,
         type: 3}
       propertyPath: colliderOffset.x
@@ -12830,11 +12805,6 @@ PrefabInstance:
         type: 3}
       propertyPath: groundLength
       value: 1.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 7777296062143010349, guid: 199891f88a025414cb3f722ee55a678d,
-        type: 3}
-      propertyPath: m_Material
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7777296062143010350, guid: 199891f88a025414cb3f722ee55a678d,
         type: 3}
