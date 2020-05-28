@@ -10,7 +10,7 @@ public class nature_saturate : MonoBehaviour {
   List<GameObject> childObjects;
   int childCount = 0;
 
-  bool polluted = false;
+  public bool polluted = false;
   [Range(1.0f, 10f)]
   public float effectedRadius = 10f;
   public Collider[] pollutedColliders;
@@ -20,6 +20,10 @@ public class nature_saturate : MonoBehaviour {
     saturationLevel = 0f;
     material = Instantiate<Material>(material);
     Initialize();
+  }
+
+  private void FixedUpdate() {
+    polluted = false;
   }
 
   // Update is called once per frame
@@ -40,6 +44,7 @@ public class nature_saturate : MonoBehaviour {
     }
   }
 
+
   public void Polluted(bool isPolluted) {
     polluted = isPolluted;
   }
@@ -54,7 +59,7 @@ public class nature_saturate : MonoBehaviour {
     childCount = childObjects.Count;
   }
 
-
+  /*
   private void OnTriggerEnter2D(Collider2D collision) {
     if (collision.gameObject.tag == "PEA") {
       Debug.Log("Polluted!");
@@ -66,6 +71,14 @@ public class nature_saturate : MonoBehaviour {
     if (collision.gameObject.tag == "PEA") {
       Debug.Log("Clean!");
       polluted = false;
+    }
+  }
+  */
+
+  private void OnTriggerStay2D(Collider2D collision) {
+    if (collision.gameObject.tag == "PEA") {
+      Debug.Log("Stay!");
+      polluted = true;
     }
   }
 }
