@@ -47,8 +47,6 @@ public class player : MonoBehaviour {
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
-        var originalObjectFriction = gameObject.GetComponent<Collider2D>().friction;
-        Debug.Log("Fric: " + originalObjectFriction);
 
         this.GetComponent<SpriteRenderer>().enabled = true;
         origin = gameObject.transform.position;
