@@ -49,6 +49,7 @@ public class player : MonoBehaviour {
         rb = this.GetComponent<Rigidbody2D>();
 
         this.GetComponent<SpriteRenderer>().enabled = true;
+
         origin = gameObject.transform.position;
     }
 
