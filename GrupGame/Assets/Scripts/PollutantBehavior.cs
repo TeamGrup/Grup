@@ -2,7 +2,7 @@
 
 public class PollutantBehavior : MonoBehaviour
 {
-
+    protected virtual void Float() { }
 
     [Header("Player Damage")]
     public float pushbackForce = 10f;
@@ -24,20 +24,6 @@ public class PollutantBehavior : MonoBehaviour
         Float();
     }
 
-
-    protected virtual void Float() { }
-
-    /*
-      //FLOAT CODE SOURCE:
-    //http://www.donovankeith.com/2016/05/making-objects-float-up-down-in-unity/
-    void Float() {
-      // Float up/down with a Sin()
-      tempPos = posOffset;
-      tempPos.y += Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude;
-
-      transform.position = tempPos;
-    }
-    */
     void OnTriggerStay2D(Collider2D col)
     {
         if (col.gameObject.tag == "Player")

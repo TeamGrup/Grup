@@ -23,7 +23,7 @@ public class CameraFollow : MonoBehaviour
         CameraMove();
         if(Input.GetAxis("Horizontal") == 0)
         {
-            player playerChar = targetToFollow.GetComponent<player>();
+            player playerChar = targetToFollow.GetComponent<player>(); // ? optomize this to be set in start
             if(!playerChar.canClimb && playerChar.onGround)
                 LookUpAndDown();
         }
@@ -38,7 +38,7 @@ public class CameraFollow : MonoBehaviour
                                         ,Mathf.Clamp(desiredPosition.y,-4,yClamp)
                                         ,desiredPosition.z);
 
-        Vector3 smoothPosition = Vector3.Lerp(transform.position, wallHit, smoothSpeed); // ?need to fix clamping
+        Vector3 smoothPosition = Vector3.Lerp(transform.position, wallHit, smoothSpeed);
         
         transform.position = smoothPosition;
     }
@@ -47,7 +47,7 @@ public class CameraFollow : MonoBehaviour
     {
         if(Input.GetAxis("Vertical") < -.4)
         {
-            Vector3 newPosition = new Vector3(transform.position.x,  Mathf.Clamp(transform.position.y + -Mathf.Abs(Down), -4, yClamp),0);
+            Vector3 newPosition = new Vector3(transform.position.x,  Mathf.Clamp(transform.position.y + -Mathf.Abs(Down), -4, yClamp),0); // ? dont declare new variable here
             smoothLookPos = Vector3.Lerp(transform.position, newPosition, smoothSpeed);
             transform.position = smoothLookPos;
         }
