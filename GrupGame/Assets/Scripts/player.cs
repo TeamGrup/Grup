@@ -55,7 +55,7 @@ public class player : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        bool wasOnGround = onGround;
+        // bool wasOnGround = onGround; ? is this needed?
 
         DetectJump();
 
@@ -115,8 +115,6 @@ public class player : MonoBehaviour {
         if (Mathf.Abs(rb.velocity.x) > maxSpeed) {
             rb.velocity = new Vector2(Mathf.Sign(rb.velocity.x) * maxSpeed, rb.velocity.y);
         }
-
-
     }
 
     void Jump(){
