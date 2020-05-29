@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 917426986467170759}
   - component: {fileID: 917426986467170758}
   - component: {fileID: 917426986467170754}
-  - component: {fileID: 917426986467170755}
   - component: {fileID: 917426986467170756}
   - component: {fileID: 7087073701857069583}
+  - component: {fileID: 4055234052330866123}
   m_Layer: 0
   m_Name: ground_pollutant
   m_TagString: Pollutant
@@ -105,21 +105,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &917426986467170755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 917426986467170760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15edfcbedc58c5c46b332ea841c02974, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  amplitude: 0.5
-  frequency: 1
-  pushbackForce: 10
 --- !u!60 &917426986467170756
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -224,7 +209,22 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 8.58
+  m_Radius: 8.5
+--- !u!114 &4055234052330866123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917426986467170760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e114866e0579bd4497049671d750f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.5
+  frequency: 1
+  pushbackForce: 10
 --- !u!1 &6218889092079947749
 GameObject:
   m_ObjectHideFlags: 0
