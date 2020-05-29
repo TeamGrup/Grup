@@ -28,8 +28,7 @@ public class PollutantBehavior : MonoBehaviour {
   // Update is called once per frame
   void Update() {
     Float();
-    
-  }
+    }
 
   //FLOAT CODE SOURCE:
   //http://www.donovankeith.com/2016/05/making-objects-float-up-down-in-unity/
