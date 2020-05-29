@@ -1081,6 +1081,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &370728294 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7777296062143010346, guid: 199891f88a025414cb3f722ee55a678d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1477199980}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &384235089
 GameObject:
   m_ObjectHideFlags: 0
@@ -1930,12 +1936,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d58df47760adfd94d8a6c37e27a4b143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetToFollow: {fileID: 1367704895}
+  targetToFollow: {fileID: 370728294}
   smoothSpeed: 0.125
   offset: {x: 0, y: 2.5, z: -1}
   direction: 1
   xClamp: 28
   yClamp: 1
+  Up: 3
+  Down: 3
 --- !u!114 &970627937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1946,6 +1954,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23c1ce4fb46143f46bc5cb5224c934f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!81 &970627938
@@ -2878,12 +2890,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &1367704895 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7777296062143010351, guid: 199891f88a025414cb3f722ee55a678d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1477199980}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1458562264
 GameObject:
   m_ObjectHideFlags: 0

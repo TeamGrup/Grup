@@ -1526,12 +1526,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 484c6afa0b8bf554686df87e6a96f83e, type: 3}
---- !u!4 &151440583 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7777296062143010351, guid: 199891f88a025414cb3f722ee55a678d,
-    type: 3}
-  m_PrefabInstance: {fileID: 7777296061991934696}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &152338514
 GameObject:
   m_ObjectHideFlags: 0
@@ -10969,6 +10963,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20.38, y: 10.99}
   m_EdgeRadius: 0
+--- !u!1 &1770409780 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7777296062143010346, guid: 199891f88a025414cb3f722ee55a678d,
+    type: 3}
+  m_PrefabInstance: {fileID: 7777296061991934696}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1791357480
 GameObject:
   m_ObjectHideFlags: 0
@@ -12651,7 +12651,7 @@ PrefabInstance:
         type: 3}
       propertyPath: targetToFollow
       value: 
-      objectReference: {fileID: 151440583}
+      objectReference: {fileID: 1770409780}
     - target: {fileID: 2569272987331658907, guid: 72ae92b83f689c242b5182ab8e09d277,
         type: 3}
       propertyPath: m_Name

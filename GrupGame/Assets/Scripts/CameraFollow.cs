@@ -2,7 +2,7 @@
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform targetToFollow;
+    public GameObject targetToFollow;
 
     public float smoothSpeed = 0.125f;
     public Vector3 offset;
@@ -12,18 +12,27 @@ public class CameraFollow : MonoBehaviour
     public float xClamp = -3f;
     public float yClamp = -4f;
 
+    public float Up = 3f;
+    public float Down = 3f;
+    private Vector3 smoothLookPos;
+
 
 
     void FixedUpdate()
     {
+        CameraMove();
+        if(Input.GetAxis("Horizontal") == 0)
+        {
+            player playerChar = targetToFollow.GetComponent<player>();
+            if(!playerChar.canClimb && playerChar.onGround)
+                LookUpAndDown();
+        }
+    }
 
-        // if(direction != targetToFollow.transform.right.x)
-        // {
-        //     direction = targetToFollow.transform.right.x;
-        // }
-        // offset *= direction;
-
-        Vector3 desiredPosition = targetToFollow.position + offset;
+    void CameraMove()
+    {
+        
+        Vector3 desiredPosition = targetToFollow.transform.position + offset;
 
         Vector3 wallHit = new Vector3(Mathf.Clamp(desiredPosition.x,-3,xClamp)
                                         ,Mathf.Clamp(desiredPosition.y,-4,yClamp)
@@ -31,22 +40,23 @@ public class CameraFollow : MonoBehaviour
 
         Vector3 smoothPosition = Vector3.Lerp(transform.position, wallHit, smoothSpeed); // ?need to fix clamping
         
-        // if(Input.GetAxis("Vertical") < 0 && Input.GetAxis("Horizontal") == 0)
-        // {
-        //     Vector3 lookDownPosition = new Vector3(0,-2,-.3f);
-        //     desiredPosition = targetToFollow.position + lookDownPosition;
-        //     smoothPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
-        //     transform.position = smoothPosition;
-        // }
-
-        // if(Input.GetAxis("Vertical") > 0 && Input.GetAxis("Horizontal") == 0)
-        // {
-        //     Vector3 lookDownPosition = new Vector3(0, 4, -.3f);
-        //     desiredPosition = targetToFollow.position + lookDownPosition;
-        //     smoothPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
-        //     transform.position = smoothPosition;
-        // }
-
         transform.position = smoothPosition;
+    }
+
+    void LookUpAndDown()
+    {
+        if(Input.GetAxis("Vertical") < -.4)
+        {
+            Vector3 newPosition = new Vector3(transform.position.x,  Mathf.Clamp(transform.position.y + -Mathf.Abs(Down), -4, yClamp),0);
+            smoothLookPos = Vector3.Lerp(transform.position, newPosition, smoothSpeed);
+            transform.position = smoothLookPos;
+        }
+
+        if(Input.GetAxis("Vertical") > .4)
+        {
+            Vector3 newPosition = new Vector3(transform.position.x,  Mathf.Clamp(transform.position.y + Mathf.Abs(Up), -4, yClamp),0);
+            smoothLookPos = Vector3.Lerp(transform.position, newPosition, smoothSpeed);
+            transform.position = smoothLookPos;
+        }
     }
 }
