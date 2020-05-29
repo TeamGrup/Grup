@@ -3,23 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class nature_saturate : MonoBehaviour {
-  public Material material;
   public float saturationLevel;
-  public Texture2D _MainTex;
+
+  public Material[] materials;
+  public Texture2D[] texutres;
+
+  public List<GameObject> flowers;
+  public List<GameObject> leaves;
 
   List<GameObject> childObjects;
-  int childCount = 0;
+  //int childCount = 0;
 
   public bool polluted = false;
-  [Range(1.0f, 10f)]
-  public float effectedRadius = 10f;
-  public Collider[] pollutedColliders;
-
   // Start is called before the first frame update
   void Start() {
     saturationLevel = 0f;
-    material = Instantiate<Material>(material);
-    Initialize();
+    //leaves
+    materials[0] = Instantiate<Material>(materials[0]);
+    leaves = Initialize("Leaves", flowers, 0);
+    //flowers
+    materials[1] = Instantiate<Material>(materials[1]);
+    flowers = Initialize("Flowers", flowers, 1);
+
+
   }
 
   private void FixedUpdate() {
@@ -28,9 +34,10 @@ public class nature_saturate : MonoBehaviour {
 
   // Update is called once per frame
   void Update() {
-    material.SetTexture("Texture2D_639B53C6", _MainTex);
-    material.SetFloat("Vector1_B4184947", saturationLevel);
-
+    materials[0].SetTexture("Texture2D_639B53C6", texutres[0]);
+    materials[0].SetFloat("Vector1_B4184947", saturationLevel);
+    materials[1].SetTexture("Texture2D_639B53C6", texutres[1]);
+    materials[1].SetFloat("Vector1_B4184947", saturationLevel);
 
     if (polluted) {
       if (saturationLevel >= 0f) {
@@ -49,15 +56,19 @@ public class nature_saturate : MonoBehaviour {
     polluted = isPolluted;
   }
 
-  void Initialize() {
-    childObjects = new List<GameObject>();
-    foreach (Transform child in transform) {
-      childObjects.Add(child.gameObject);
-      child.GetComponent<SpriteRenderer>().material = material;
+  List<GameObject> Initialize(string strParent, List<GameObject> list, int listIndex) {
+    Transform parent = transform.Find(strParent);
+    list = new List<GameObject>();
+
+    foreach (Transform child in parent) {
+      list.Add(child.gameObject);
+      child.GetComponent<SpriteRenderer>().material = materials[listIndex];
     }
 
-    childCount = childObjects.Count;
+    return list;
   }
+
+
 
   private void OnTriggerStay2D(Collider2D collision) {
     if (collision.gameObject.tag == "PEA") {
