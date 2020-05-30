@@ -10,9 +10,7 @@ public class levelGenerator : MonoBehaviour {
   public List<GameObject> allPrefabs;
   public ColorToPrefab[] colorMappings;
   // Start is called before the first frame update
-  void Start() {
-    GenerateLevel();
-  }
+  bool player = false;
 
   void InitializeLists() {
     parents = new Dictionary<string, GameObject>();
@@ -49,9 +47,20 @@ public class levelGenerator : MonoBehaviour {
 
       Vector2 position = new Vector2(x, y);
       if (colorMapping.color.Equals(pixelColor)) {
+        //spawned a player?
+        if (colorMapping.color.Equals(Color.blue) && player) {
+          continue;
+        }
+
+        if (colorMapping.color.Equals(Color.blue)) {
+          player = true;
+        }
+
+        // instantiate object based on player
         Instantiate(colorMapping.prefab, position, Quaternion.identity, parents[colorMapping.prefabName].transform);
         prefabsInScene[pixelColor].Add(colorMapping.prefab);
         allPrefabs.Add(colorMapping.prefab);
+
       }
     }
 
