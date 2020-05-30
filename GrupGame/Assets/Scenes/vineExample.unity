@@ -2891,12 +2891,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1075552338}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1196880976 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7777296062143010351, guid: 199891f88a025414cb3f722ee55a678d,
-    type: 3}
-  m_PrefabInstance: {fileID: 105310710}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1203998439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2977,7 +2971,8 @@ PrefabInstance:
         type: 3}
       propertyPath: targetToFollow
       value: 
-      objectReference: {fileID: 1196880976}
+      objectReference: {fileID: 7777296062143010346, guid: 199891f88a025414cb3f722ee55a678d,
+        type: 3}
     - target: {fileID: 2569272987331658907, guid: 72ae92b83f689c242b5182ab8e09d277,
         type: 3}
       propertyPath: m_Name
