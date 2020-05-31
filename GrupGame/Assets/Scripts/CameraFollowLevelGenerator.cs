@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class CameraFollow : MonoBehaviour {
+public class CameraFollowLevelGenerator : MonoBehaviour {
   public GameObject targetToFollow;
 
   public float smoothSpeed = 0.125f;
@@ -15,11 +15,11 @@ public class CameraFollow : MonoBehaviour {
   public float Down = 3f;
   private Vector3 smoothLookPos;
 
-  /* this is for the level generatr -- scott
+
   private void Start() {
     targetToFollow = GameObject.Find("mainCharacter");
   }
-  */
+
   void FixedUpdate() {
     CameraMove();
     if (Input.GetAxis("Horizontal") == 0) {
