@@ -11,6 +11,8 @@ TagManager:
   - Pollutant
   - Plant
   - PEA
+  - EntrySpawn
+  - ExitSpawn
   layers:
   - Default
   - TransparentFX
