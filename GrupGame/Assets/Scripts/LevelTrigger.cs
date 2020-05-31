@@ -9,7 +9,6 @@ public class LevelTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log($"{collision.gameObject.tag} has entered the trigger.");
         if (collision.gameObject.tag.Equals("Player"))
         {
             if (PollutantsCleared)
