@@ -46,11 +46,13 @@ public class player : MonoBehaviour {
 
     void Start()
     {
-        rb = this.GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
 
-        this.GetComponent<SpriteRenderer>().enabled = true;
+        GetComponent<SpriteRenderer>().enabled = true;
 
-        origin = gameObject.transform.position;
+        Debug.Log($"Spawn Point: {StaticSceneInfo.GetSpawnPoint()}");
+        origin = GameObject.FindGameObjectWithTag(StaticSceneInfo.GetSpawnPoint()).transform.position;
+        gameObject.transform.position = origin;
     }
 
     // Update is called once per frame
@@ -86,10 +88,8 @@ public class player : MonoBehaviour {
         bool RightRaycast = Physics2D.Raycast(transform.position + colliderOffset, Vector2.down, groundLength, groundLayer);
         bool LeftRaycast = Physics2D.Raycast(transform.position - colliderOffset, Vector2.down, groundLength, groundLayer);
 
-        Debug.Log($"Left - {LeftRaycast}, Right - {RightRaycast}");
         // If either are on ground, jump is good to go
         onGround = RightRaycast || LeftRaycast;
-        Debug.Log($"OnGround - {onGround}");
 
         // Allows player to input jump button before touchdown, and still jump
         // jumpTimer user in fixedUpdate

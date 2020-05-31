@@ -3,16 +3,27 @@ using UnityEngine.SceneManagement;
 
 public class LevelTrigger : MonoBehaviour
 {
+    public string LevelToLoad;
+    public StaticSceneInfo.SpawnPoint SpawnLoc;
+    public bool PollutantsCleared = true;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log($"{collision.gameObject.tag} has entered the trigger.");
         if (collision.gameObject.tag.Equals("Player"))
         {
-            var pollutants = GameObject.FindGameObjectsWithTag("Pollutant");
-            Debug.Log($"{pollutants.Length} pollutants left to clear.");
-            if (pollutants.Length == 0)
+            if (PollutantsCleared)
             {
-                SceneManager.LoadScene("last-ground-level");
+                var pollutants = GameObject.FindGameObjectsWithTag("Pollutant");
+                if (pollutants.Length == 0)
+                {
+                    StaticSceneInfo.Spawn = SpawnLoc;
+                    SceneManager.LoadScene(LevelToLoad);
+                }
+            }
+            else
+            {
+                StaticSceneInfo.Spawn = SpawnLoc;
+                SceneManager.LoadScene(LevelToLoad);
             }
         }
     }
