@@ -83,15 +83,17 @@ public class player : MonoBehaviour {
     void DetectJump()
     {
         // These detect if the player is currently on the ground
-        var RightRaycast = Physics2D.Raycast(transform.position + colliderOffset, Vector2.down, groundLength, groundLayer);
-        var LeftRaycast = Physics2D.Raycast(transform.position - colliderOffset, Vector2.down, groundLength, groundLayer);
+        bool RightRaycast = Physics2D.Raycast(transform.position + colliderOffset, Vector2.down, groundLength, groundLayer);
+        bool LeftRaycast = Physics2D.Raycast(transform.position - colliderOffset, Vector2.down, groundLength, groundLayer);
 
+        Debug.Log($"Left - {LeftRaycast}, Right - {RightRaycast}");
         // If either are on ground, jump is good to go
         onGround = RightRaycast || LeftRaycast;
+        Debug.Log($"OnGround - {onGround}");
 
         // Allows player to input jump button before touchdown, and still jump
         // jumpTimer user in fixedUpdate
-        if(Input.GetButtonDown("Jump")){
+        if (Input.GetButtonDown("Jump")){
             jumpTimer = Time.time + jumpDelay;
         }
     }
