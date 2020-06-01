@@ -11,10 +11,6 @@ public class PollutantBehavior : MonoBehaviour
     protected Vector3 posOffset = new Vector3();
     protected Vector3 tempPos = new Vector3();
 
-    private void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
     void Start()
     {
         // Store the starting position & rotation of the object
