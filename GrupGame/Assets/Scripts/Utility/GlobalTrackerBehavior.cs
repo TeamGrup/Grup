@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Assertions;
@@ -59,11 +58,11 @@ public class GlobalTrackerBehavior : MonoBehaviour
             var pollutants = GameObject.FindGameObjectsWithTag("Pollutant");
             foreach(var pollutant in pollutants)
             {
+                Debug.Log($"Adding Pollutant: {pollutant.name}");
                 newLevel.LevelObjects.Add(new LevelObject() { Name = pollutant.name, Enabled = true });
             }
 
             levels.Add(newLevel);
-            
         }
     }
 
@@ -74,16 +73,13 @@ public class GlobalTrackerBehavior : MonoBehaviour
 
         foreach(var lvlObj in curLevel.LevelObjects)
         {
+            Debug.Log($"Checking Pollutant: {lvlObj.Name}");
             var gameObj = GameObject.Find(lvlObj.Name);
             if (!gameObj)
             {
+                Debug.Log($"Removing Pollutant: {lvlObj.Name}");
                 lvlObj.Enabled = false;
             }
         }
-    }
-
-    private void Start()
-    {
-        
     }
 }
