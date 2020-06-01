@@ -32,7 +32,7 @@ public class GlobalTrackerBehavior : MonoBehaviour
     {
         if (levels.FirstOrDefault(lvl => lvl.LevelName.Equals(name)) != null)
         {
-            Debug.Log($"Level has already been loaded once.");
+            Debug.Log($"Level [{sceneName}] has already been loaded once.");
             var curLevel = levels.FirstOrDefault(lvl => lvl.LevelName.Equals(sceneName));
             Assert.IsNotNull(curLevel);
 
@@ -47,7 +47,7 @@ public class GlobalTrackerBehavior : MonoBehaviour
         }
         else
         {
-            Debug.Log($"Level has never been loaded.");
+            Debug.Log($"Level [{sceneName}] has never been loaded.");
             var newLevel = new Level
             {
                 LevelName = name,
