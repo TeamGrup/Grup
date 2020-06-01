@@ -827,7 +827,7 @@ GameObject:
   - component: {fileID: 85868021}
   m_Layer: 0
   m_Name: white flower (1)
-  m_TagString: Untagged
+  m_TagString: Vine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2874,6 +2874,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 439604626}
     m_Modifications:
+    - target: {fileID: 4610358386141974731, guid: 206e859b4e778d4488f4444f85f4261d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Vine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4610358386613146177, guid: 206e859b4e778d4488f4444f85f4261d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Vine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4610358387216545665, guid: 206e859b4e778d4488f4444f85f4261d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Vine
+      objectReference: {fileID: 0}
     - target: {fileID: 4610358387478017281, guid: 206e859b4e778d4488f4444f85f4261d,
         type: 3}
       propertyPath: m_Offset.y
@@ -2953,6 +2968,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: vine_p0_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4610358387478017295, guid: 206e859b4e778d4488f4444f85f4261d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Vine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4610358387603065693, guid: 206e859b4e778d4488f4444f85f4261d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Vine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4610358387903017027, guid: 206e859b4e778d4488f4444f85f4261d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Vine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 206e859b4e778d4488f4444f85f4261d, type: 3}
@@ -8573,7 +8603,7 @@ GameObject:
   - component: {fileID: 651428525}
   m_Layer: 0
   m_Name: vine
-  m_TagString: Untagged
+  m_TagString: Vine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11851,7 +11881,7 @@ GameObject:
   - component: {fileID: 823308265}
   m_Layer: 0
   m_Name: white flower
-  m_TagString: Untagged
+  m_TagString: Vine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12151,6 +12181,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: vine_p4_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4610358387478017295, guid: 206e859b4e778d4488f4444f85f4261d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Vine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 206e859b4e778d4488f4444f85f4261d, type: 3}
@@ -14259,7 +14294,7 @@ GameObject:
   - component: {fileID: 1088095861}
   m_Layer: 0
   m_Name: vine (3)
-  m_TagString: Untagged
+  m_TagString: Vine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16829,7 +16864,7 @@ GameObject:
   - component: {fileID: 1288601249}
   m_Layer: 0
   m_Name: vine (2)
-  m_TagString: Untagged
+  m_TagString: Vine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17034,7 +17069,7 @@ GameObject:
   - component: {fileID: 1299840854}
   m_Layer: 0
   m_Name: white flower (1)
-  m_TagString: Untagged
+  m_TagString: Vine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17258,7 +17293,7 @@ GameObject:
   - component: {fileID: 1370839157}
   m_Layer: 0
   m_Name: Vine_B
-  m_TagString: Untagged
+  m_TagString: Vine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18634,6 +18669,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: vine_p7_0
       objectReference: {fileID: 0}
+    - target: {fileID: 4610358387478017295, guid: 206e859b4e778d4488f4444f85f4261d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Vine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 206e859b4e778d4488f4444f85f4261d, type: 3}
 --- !u!1 &1411475827 stripped
@@ -19140,6 +19180,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: vine_p1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4610358387478017295, guid: 206e859b4e778d4488f4444f85f4261d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Vine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 206e859b4e778d4488f4444f85f4261d, type: 3}
@@ -19982,7 +20027,7 @@ GameObject:
   - component: {fileID: 1540027896}
   m_Layer: 0
   m_Name: white flower
-  m_TagString: Untagged
+  m_TagString: Vine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24258,6 +24303,49 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1939724979
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1939724981}
+  - component: {fileID: 1939724980}
+  m_Layer: 0
+  m_Name: GlobalTracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1939724980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939724979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08000f133aa3af24d8b891ac45ff13f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1939724981
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939724979}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.466591, y: 11.662245, z: 0.4765625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1940000975 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1645686013674283626, guid: 07983c96e866b0c44810ef7b852fad14,
@@ -24340,7 +24428,7 @@ GameObject:
   - component: {fileID: 2013807651}
   m_Layer: 0
   m_Name: vine (1)
-  m_TagString: Untagged
+  m_TagString: Vine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24540,7 +24628,7 @@ GameObject:
   - component: {fileID: 2053428516}
   m_Layer: 0
   m_Name: Vine_B (1)
-  m_TagString: Untagged
+  m_TagString: Vine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25644,6 +25732,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: vine_p3_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4610358387478017295, guid: 206e859b4e778d4488f4444f85f4261d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Vine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 206e859b4e778d4488f4444f85f4261d, type: 3}

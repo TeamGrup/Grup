@@ -11,7 +11,10 @@ public class PollutantBehavior : MonoBehaviour
     protected Vector3 posOffset = new Vector3();
     protected Vector3 tempPos = new Vector3();
 
-    // Use this for initialization
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
     void Start()
     {
         // Store the starting position & rotation of the object
@@ -30,7 +33,6 @@ public class PollutantBehavior : MonoBehaviour
         {
             if (Input.GetKeyDown("e"))
             {
-                Debug.Log("Deleting");
                 Destroy(gameObject);
             }
         }

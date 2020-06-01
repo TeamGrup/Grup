@@ -11,17 +11,20 @@ public class LevelTrigger : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
+            var gs = FindObjectOfType<GlobalTrackerBehavior>();
             if (PollutantsCleared)
             {
                 var pollutants = GameObject.FindGameObjectsWithTag("Pollutant");
                 if (pollutants.Length == 0)
                 {
+                    gs.SaveScene();
                     StaticSceneInfo.Spawn = SpawnLoc;
                     SceneManager.LoadScene(LevelToLoad);
                 }
             }
             else
             {
+                gs.SaveScene();
                 StaticSceneInfo.Spawn = SpawnLoc;
                 SceneManager.LoadScene(LevelToLoad);
             }

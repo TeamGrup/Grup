@@ -72,7 +72,7 @@ public class nature_saturate : MonoBehaviour {
 
   private void OnTriggerStay2D(Collider2D collision) {
     if (collision.gameObject.tag == "PEA") {
-      Debug.Log("Stay!");
+      //Debug.Log("Stay!");
       polluted = true;
     }
   }
