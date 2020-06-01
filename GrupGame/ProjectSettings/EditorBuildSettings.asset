@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/levels/04_water-level.unity
     guid: 1982be171af17ba4f9430e42033a4135
   - enabled: 1
-    path: Assets/Scenes/levels/04_ground_level.unity
+    path: Assets/Scenes/levels/02_ground_level.unity
     guid: ccf167e4c2fbb90479309298a6e95643
   - enabled: 1
     path: Assets/Scenes/levels/Credits.unity
