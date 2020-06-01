@@ -327,6 +327,7 @@ GameObject:
   - component: {fileID: 1645686013674283626}
   - component: {fileID: 1645686013674283627}
   - component: {fileID: 1645686013674283624}
+  - component: {fileID: 114036169874579540}
   m_Layer: 0
   m_Name: jungleBushBunchYellow
   m_TagString: Plant
@@ -388,6 +389,18 @@ CapsuleCollider2D:
   m_Offset: {x: 0.34, y: 0.45}
   m_Size: {x: 3.33, y: 4.12}
   m_Direction: 1
+--- !u!114 &114036169874579540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645686013674283621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 569620698fcf8754f8193c7dcdca048d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3185336403276683217
 GameObject:
   m_ObjectHideFlags: 0
