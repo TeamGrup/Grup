@@ -23,6 +23,11 @@ public class CreditsCycle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+
         var canvasGroup = Groups[position].GetComponent<CanvasGroup>();
 
         if (fadeIn)
@@ -30,12 +35,13 @@ public class CreditsCycle : MonoBehaviour
             if (Time.time - startTime < Duration)
             {
                 var timeLeft = Duration - (Time.time - startTime);
-                canvasGroup.alpha = (timeLeft / Duration * 100);
+                canvasGroup.alpha = 1 - (timeLeft / Duration);
             }
             else
             {
                 canvasGroup.alpha = 1;
                 fadeIn = false;
+                startTime = Time.time;
             }
         }
         else
@@ -43,7 +49,7 @@ public class CreditsCycle : MonoBehaviour
             if (Time.time - startTime < Duration)
             {
                 var timeLeft = Duration - (Time.time - startTime);
-                canvasGroup.alpha = (timeLeft / Duration * 100);
+                canvasGroup.alpha = (timeLeft / Duration);
             }
             else
             {
