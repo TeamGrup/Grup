@@ -8,8 +8,11 @@ public class CameraFollow : MonoBehaviour {
 
   public float direction = 1;
 
-  public float xClamp = -3f;
-  public float yClamp = -4f;
+  public float xClampMax = 10f;
+  public float yClampMax = 10f;
+
+  public float xClampMin = -4f;
+  public float yClampMin = -4f;
 
   public float Up = 3f;
   public float Down = 3f;
@@ -33,8 +36,8 @@ public class CameraFollow : MonoBehaviour {
 
     Vector3 desiredPosition = targetToFollow.transform.position + offset;
 
-    Vector3 wallHit = new Vector3(Mathf.Clamp(desiredPosition.x, -3, xClamp)
-                                    , Mathf.Clamp(desiredPosition.y, -4, yClamp)
+    Vector3 wallHit = new Vector3(Mathf.Clamp(desiredPosition.x, xClampMin, xClampMax)
+                                    , Mathf.Clamp(desiredPosition.y, yClampMin, yClampMax)
                                     , desiredPosition.z);
 
     Vector3 smoothPosition = Vector3.Lerp(transform.position, wallHit, smoothSpeed);
@@ -44,13 +47,13 @@ public class CameraFollow : MonoBehaviour {
 
   void LookUpAndDown() {
     if (Input.GetAxis("Vertical") < -.4) {
-      Vector3 newPosition = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y + -Mathf.Abs(Down), -4, yClamp), 0); // ? dont declare new variable here
+      Vector3 newPosition = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y + -Mathf.Abs(Down), yClampMin, yClampMax), 0); // ? dont declare new variable here
       smoothLookPos = Vector3.Lerp(transform.position, newPosition, smoothSpeed);
       transform.position = smoothLookPos;
     }
 
     if (Input.GetAxis("Vertical") > .4) {
-      Vector3 newPosition = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y + Mathf.Abs(Up), -4, yClamp), 0);
+      Vector3 newPosition = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y + Mathf.Abs(Up), yClampMin, yClampMax), 0);
       smoothLookPos = Vector3.Lerp(transform.position, newPosition, smoothSpeed);
       transform.position = smoothLookPos;
     }
