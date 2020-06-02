@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571322, b: 0.30692163, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -733,6 +733,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pollutant (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 229e6824ac00d444497d491e87e3ea4f, type: 3}
 --- !u!1 &10664530
@@ -7636,6 +7654,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pollutant
       objectReference: {fileID: 0}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 229e6824ac00d444497d491e87e3ea4f, type: 3}
 --- !u!1 &113543885
@@ -10588,6 +10624,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pollutant (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 229e6824ac00d444497d491e87e3ea4f, type: 3}
 --- !u!1 &152240282
@@ -11967,6 +12021,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pollutant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 229e6824ac00d444497d491e87e3ea4f, type: 3}
 --- !u!1 &180691085
@@ -14648,6 +14720,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3856509f1768e648be7716979093908, type: 3}
 --- !u!4 &226162839 stripped
@@ -15999,6 +16089,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3856509f1768e648be7716979093908, type: 3}
 --- !u!1 &232682977
@@ -22577,6 +22685,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3856509f1768e648be7716979093908, type: 3}
 --- !u!1 &361611953
@@ -28254,6 +28380,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3856509f1768e648be7716979093908, type: 3}
 --- !u!4 &441835090 stripped
@@ -35984,6 +36128,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pollutant (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 229e6824ac00d444497d491e87e3ea4f, type: 3}
 --- !u!1 &563788245
@@ -36100,6 +36262,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pollutant (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 229e6824ac00d444497d491e87e3ea4f, type: 3}
 --- !u!1 &566700253
@@ -39679,6 +39859,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pollutant (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 229e6824ac00d444497d491e87e3ea4f, type: 3}
 --- !u!1 &625664154
@@ -56669,6 +56867,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pollutant (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 229e6824ac00d444497d491e87e3ea4f, type: 3}
 --- !u!1001 &927804897
@@ -75978,6 +76194,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3856509f1768e648be7716979093908, type: 3}
 --- !u!4 &1267585983 stripped
@@ -82216,6 +82450,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pollutant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 229e6824ac00d444497d491e87e3ea4f, type: 3}
 --- !u!1 &1370702562
@@ -88759,6 +89011,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3856509f1768e648be7716979093908, type: 3}
 --- !u!4 &1481291336 stripped
@@ -88930,6 +89200,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pollutant (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 229e6824ac00d444497d491e87e3ea4f, type: 3}
 --- !u!1 &1492599029
@@ -94030,6 +94318,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3856509f1768e648be7716979093908, type: 3}
 --- !u!1 &1593871234
@@ -95854,6 +96160,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pollutant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 229e6824ac00d444497d491e87e3ea4f, type: 3}
 --- !u!1 &1628181685
@@ -106247,6 +106571,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pollutant (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 229e6824ac00d444497d491e87e3ea4f, type: 3}
 --- !u!1 &1797721964
@@ -108415,6 +108757,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pollutant (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 229e6824ac00d444497d491e87e3ea4f, type: 3}
 --- !u!1 &1830056050
@@ -113568,6 +113928,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pollutant (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 229e6824ac00d444497d491e87e3ea4f, type: 3}
 --- !u!1001 &1921225138
@@ -120026,6 +120404,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pollutant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 229e6824ac00d444497d491e87e3ea4f, type: 3}
 --- !u!1 &2022995912
