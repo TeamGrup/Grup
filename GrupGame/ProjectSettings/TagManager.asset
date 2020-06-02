@@ -9,6 +9,10 @@ TagManager:
   - FruitTree
   - Vine
   - Pollutant
+  - Plant
+  - PEA
+  - EntrySpawn
+  - ExitSpawn
   layers:
   - Default
   - TransparentFX
@@ -21,8 +25,8 @@ TagManager:
   - PostProcessing
   - Ground
   - Player
-  - 
-  - 
+  - Pollution
+  - Plant
   - 
   - 
   - 

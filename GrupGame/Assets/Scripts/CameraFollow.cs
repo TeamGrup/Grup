@@ -1,52 +1,61 @@
 ﻿using UnityEngine;
 
-public class CameraFollow : MonoBehaviour
-{
-    public Transform targetToFollow;
+public class CameraFollow : MonoBehaviour {
+  public GameObject targetToFollow;
 
-    public float smoothSpeed = 0.125f;
-    public Vector3 offset;
+  public float smoothSpeed = 0.125f;
+  public Vector3 offset;
 
-    public float direction = 1;
+  public float direction = 1;
 
-    public float xClamp = -3f;
-    public float yClamp = -4f;
+  public float xClampMax = 10f;
+  public float yClampMax = 10f;
 
+  public float xClampMin = -4f;
+  public float yClampMin = -4f;
 
+  public float Up = 3f;
+  public float Down = 3f;
+  private Vector3 smoothLookPos;
 
-    void FixedUpdate()
-    {
-
-        // if(direction != targetToFollow.transform.right.x)
-        // {
-        //     direction = targetToFollow.transform.right.x;
-        // }
-        // offset *= direction;
-
-        Vector3 desiredPosition = targetToFollow.position + offset;
-
-        Vector3 wallHit = new Vector3(Mathf.Clamp(desiredPosition.x,-3,xClamp)
-                                        ,Mathf.Clamp(desiredPosition.y,-4,yClamp)
-                                        ,desiredPosition.z);
-
-        Vector3 smoothPosition = Vector3.Lerp(transform.position, wallHit, smoothSpeed); // ?need to fix clamping
-        
-        // if(Input.GetAxis("Vertical") < 0 && Input.GetAxis("Horizontal") == 0)
-        // {
-        //     Vector3 lookDownPosition = new Vector3(0,-2,-.3f);
-        //     desiredPosition = targetToFollow.position + lookDownPosition;
-        //     smoothPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
-        //     transform.position = smoothPosition;
-        // }
-
-        // if(Input.GetAxis("Vertical") > 0 && Input.GetAxis("Horizontal") == 0)
-        // {
-        //     Vector3 lookDownPosition = new Vector3(0, 4, -.3f);
-        //     desiredPosition = targetToFollow.position + lookDownPosition;
-        //     smoothPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
-        //     transform.position = smoothPosition;
-        // }
-
-        transform.position = smoothPosition;
+  /* this is for the level generatr -- scott
+  private void Start() {
+    targetToFollow = GameObject.Find("mainCharacter");
+  }
+  */
+  void FixedUpdate() {
+    CameraMove();
+    if (Input.GetAxis("Horizontal") == 0) {
+      player playerChar = targetToFollow.GetComponent<player>(); // ? optomize this to be set in start
+      if (!playerChar.canClimb && playerChar.onGround)
+        LookUpAndDown();
     }
+  }
+
+  void CameraMove() {
+
+    Vector3 desiredPosition = targetToFollow.transform.position + offset;
+
+    Vector3 wallHit = new Vector3(Mathf.Clamp(desiredPosition.x, xClampMin, xClampMax)
+                                    , Mathf.Clamp(desiredPosition.y, yClampMin, yClampMax)
+                                    , desiredPosition.z);
+
+    Vector3 smoothPosition = Vector3.Lerp(transform.position, wallHit, smoothSpeed);
+
+    transform.position = smoothPosition;
+  }
+
+  void LookUpAndDown() {
+    if (Input.GetAxis("Vertical") < -.4) {
+      Vector3 newPosition = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y + -Mathf.Abs(Down), yClampMin, yClampMax), 0); // ? dont declare new variable here
+      smoothLookPos = Vector3.Lerp(transform.position, newPosition, smoothSpeed);
+      transform.position = smoothLookPos;
+    }
+
+    if (Input.GetAxis("Vertical") > .4) {
+      Vector3 newPosition = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y + Mathf.Abs(Up), yClampMin, yClampMax), 0);
+      smoothLookPos = Vector3.Lerp(transform.position, newPosition, smoothSpeed);
+      transform.position = smoothLookPos;
+    }
+  }
 }

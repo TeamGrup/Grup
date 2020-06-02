@@ -4,6 +4,7 @@ using UnityEngine;
 
 /* Resources: 
  * https://www.youtube.com/watch?v=IQ7qnMv01Vs
+ * https://answers.unity.com/questions/438304/how-to-check-if-trigger-is-empty.html
    */
 
 public class Plant : MonoBehaviour {
@@ -13,7 +14,7 @@ public class Plant : MonoBehaviour {
   public Color alive;
   public Color dead;
 
-  public Material material;
+  Material material;
   public float saturationLevel;
 
   [Header("(in seconds)")]
@@ -39,14 +40,14 @@ public class Plant : MonoBehaviour {
     transform.localScale = growthScale * scaleFactor;
 
     saturationLevel = 0f;
-    material = Instantiate<Material>(material);
     
 
 
     childLeaves = new List<GameObject>();
     foreach (Transform child in transform) {
       childLeaves.Add(child.gameObject);
-      child.GetComponent<MeshRenderer>().material = material;
+      material = child.GetComponent<SpriteRenderer>().material;
+      material = Instantiate<Material>(material);
     }
 
     childCount = childLeaves.Count;
@@ -73,8 +74,8 @@ public class Plant : MonoBehaviour {
 
   }
 
-  private void FixedUpdate() {
-    
+  public void Polluted(bool isPolluted) {
+    polluted = isPolluted;
   }
 
 

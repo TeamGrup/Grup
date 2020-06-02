@@ -28,7 +28,7 @@ public class MainMenu : MonoBehaviour {
   }
 
   public void Play() {
-    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    SceneManager.LoadScene(1);
   }
 
   public void PauseGame() {
@@ -106,6 +106,11 @@ public class MainMenu : MonoBehaviour {
   public void LoadLevelThree() {
     ResumeGame();
     SceneManager.LoadScene(4);
+  }
+
+  public void LoadCredits() {
+    ResumeGame();
+    SceneManager.LoadScene("Credits");
   }
 
 }
