@@ -21,6 +21,9 @@ public class UIScript : MonoBehaviour {
   }
 
   void UpdateText() {
-    text.text = pollutants.transform.childCount.ToString();
+    // text.text = pollutants.transform.childCount.ToString();
+    var pol = GameObject.FindGameObjectsWithTag("Pollutant"); // ? update levels so we can just find the children of the pollutant objects
+    text.text = pol.Length.ToString();
+
   }
 }
