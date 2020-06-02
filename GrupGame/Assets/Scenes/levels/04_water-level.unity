@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4728,6 +4728,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pollutant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4173051099372196386, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7087073701857069583, guid: 229e6824ac00d444497d491e87e3ea4f,
         type: 3}
       propertyPath: m_Radius
@@ -4957,6 +4962,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ground_pollutant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173051099372196386, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7087073701857069583, guid: 229e6824ac00d444497d491e87e3ea4f,
         type: 3}
@@ -6185,6 +6195,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pollutant
       objectReference: {fileID: 0}
+    - target: {fileID: 4173051099372196386, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.08
+      objectReference: {fileID: 0}
     - target: {fileID: 7087073701857069583, guid: 229e6824ac00d444497d491e87e3ea4f,
         type: 3}
       propertyPath: m_Radius
@@ -6262,7 +6277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 374bfb09ffccba84a91739e29ef76b65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelToLoad: 04_ground_level
+  LevelToLoad: 05_columns
   SpawnLoc: 0
   PollutantsCleared: 1
 --- !u!1001 &848089872
@@ -12829,8 +12844,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 374bfb09ffccba84a91739e29ef76b65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelToLoad: level1
-  SpawnLoc: 1
+  LevelToLoad: 04_water-level
+  SpawnLoc: 0
   PollutantsCleared: 0
 --- !u!61 &2026197083
 BoxCollider2D:
