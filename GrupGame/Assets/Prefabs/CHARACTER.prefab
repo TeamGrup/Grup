@@ -274,7 +274,7 @@ MonoBehaviour:
   gravity: 1.31
   fallMultiplier: 5.46
   onGround: 0
-  groundLength: 1.07
+  groundLength: 0.95
   colliderOffset: {x: 0.39, y: 0, z: 0}
   hitSomething: 0
   trampolineSpeed: 20

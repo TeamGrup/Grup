@@ -27,6 +27,7 @@ public class levelGenerator : MonoBehaviour {
   }
 
   public void GenerateLevel() {
+    bool player = false;
     InitializeLists();
     for (int x = 0; x < map.width; x++) {
       for (int y = 0; y < map.height; y++) {
