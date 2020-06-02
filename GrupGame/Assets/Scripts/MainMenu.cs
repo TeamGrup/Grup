@@ -108,4 +108,9 @@ public class MainMenu : MonoBehaviour {
     SceneManager.LoadScene(4);
   }
 
+  public void LoadCredits() {
+    ResumeGame();
+    SceneManager.LoadScene("Credits");
+  }
+
 }
