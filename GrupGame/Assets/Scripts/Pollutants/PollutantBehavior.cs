@@ -17,6 +17,10 @@ public class PollutantBehavior : MonoBehaviour
 
     void Start()
     {
+        purpleOrb = GameObject.Find("purple orb");
+        blueOrb = GameObject.Find("blue orb");
+        greenOrb = GameObject.Find("green orb");
+
         // Store the starting position & rotation of the object
         posOffset = transform.position;
     }
