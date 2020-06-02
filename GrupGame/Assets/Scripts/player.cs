@@ -46,22 +46,27 @@ public class player : MonoBehaviour {
 
     void Start()
     {
-        rb = this.GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
 
-        this.GetComponent<SpriteRenderer>().enabled = true;
+        GetComponent<SpriteRenderer>().enabled = true;
 
-        origin = gameObject.transform.position;
+        Debug.Log($"Spawn Point: {StaticSceneInfo.GetSpawnPoint()}");
+        origin = GameObject.FindGameObjectWithTag(StaticSceneInfo.GetSpawnPoint()).transform.position;
+        gameObject.transform.position = origin;
     }
 
     // Update is called once per frame
     void Update() {
-        bool wasOnGround = onGround;
+        // bool wasOnGround = onGround; ? is this needed?
 
         DetectJump();
 
         direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         animator.SetFloat("horizontal", Mathf.Abs(direction.x));
         animator.SetFloat("vertical", Mathf.Abs(direction.y));
+        animator.SetBool("canClimb", canClimb);
+        animator.SetBool("onGround", onGround);
+        animator.SetFloat("velocity", rb.velocity.y);
 
         if (onGround)
         {
@@ -83,15 +88,15 @@ public class player : MonoBehaviour {
     void DetectJump()
     {
         // These detect if the player is currently on the ground
-        var RightRaycast = Physics2D.Raycast(transform.position + colliderOffset, Vector2.down, groundLength, groundLayer);
-        var LeftRaycast = Physics2D.Raycast(transform.position - colliderOffset, Vector2.down, groundLength, groundLayer);
+        bool RightRaycast = Physics2D.Raycast(transform.position + colliderOffset, Vector2.down, groundLength, groundLayer);
+        bool LeftRaycast = Physics2D.Raycast(transform.position - colliderOffset, Vector2.down, groundLength, groundLayer);
 
         // If either are on ground, jump is good to go
         onGround = RightRaycast || LeftRaycast;
 
         // Allows player to input jump button before touchdown, and still jump
         // jumpTimer user in fixedUpdate
-        if(Input.GetButtonDown("Jump")){
+        if (Input.GetButtonDown("Jump")){
             jumpTimer = Time.time + jumpDelay;
         }
     }
@@ -115,8 +120,6 @@ public class player : MonoBehaviour {
         if (Mathf.Abs(rb.velocity.x) > maxSpeed) {
             rb.velocity = new Vector2(Mathf.Sign(rb.velocity.x) * maxSpeed, rb.velocity.y);
         }
-
-
     }
 
     void Jump(){
