@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571322, b: 0.30692163, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1434,6 +1434,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pollutant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
     - target: {fileID: 4173051099372196386, guid: 229e6824ac00d444497d491e87e3ea4f,
         type: 3}
       propertyPath: m_Radius
@@ -4728,6 +4746,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pollutant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
     - target: {fileID: 4173051099372196386, guid: 229e6824ac00d444497d491e87e3ea4f,
         type: 3}
       propertyPath: m_Radius
@@ -4963,6 +4999,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pollutant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
     - target: {fileID: 4173051099372196386, guid: 229e6824ac00d444497d491e87e3ea4f,
         type: 3}
       propertyPath: m_Radius
@@ -5747,6 +5801,24 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 2.3
       objectReference: {fileID: 0}
+    - target: {fileID: 838629383980314967, guid: 21e046607dd9d8c4b885b480c5aa7858,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
+    - target: {fileID: 838629383980314967, guid: 21e046607dd9d8c4b885b480c5aa7858,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 838629383980314967, guid: 21e046607dd9d8c4b885b480c5aa7858,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
     - target: {fileID: 838629384773677820, guid: 21e046607dd9d8c4b885b480c5aa7858,
         type: 3}
       propertyPath: m_Radius
@@ -6195,6 +6267,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_pollutant
       objectReference: {fileID: 0}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 4055234052330866123, guid: 229e6824ac00d444497d491e87e3ea4f,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
     - target: {fileID: 4173051099372196386, guid: 229e6824ac00d444497d491e87e3ea4f,
         type: 3}
       propertyPath: m_Radius
@@ -9600,6 +9690,24 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 2.91
       objectReference: {fileID: 0}
+    - target: {fileID: 838629383980314967, guid: 21e046607dd9d8c4b885b480c5aa7858,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
+    - target: {fileID: 838629383980314967, guid: 21e046607dd9d8c4b885b480c5aa7858,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 838629383980314967, guid: 21e046607dd9d8c4b885b480c5aa7858,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
     - target: {fileID: 838629384773677820, guid: 21e046607dd9d8c4b885b480c5aa7858,
         type: 3}
       propertyPath: m_Radius
@@ -11548,6 +11656,24 @@ PrefabInstance:
       propertyPath: X_Amplitude
       value: 3.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: greenOrb
+      value: 
+      objectReference: {fileID: 1418826730884993935, guid: 808922a6d38eca44a85d6f611a4bf41a,
+        type: 3}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: blueOrb
+      value: 
+      objectReference: {fileID: 3979230457287642988, guid: 4d976b9d02a81324c947f27eb42fb1a2,
+        type: 3}
+    - target: {fileID: 6057433793135051244, guid: e3856509f1768e648be7716979093908,
+        type: 3}
+      propertyPath: purpleOrb
+      value: 
+      objectReference: {fileID: 906193945574035800, guid: c48d2dd8f7d021243aafc5d4b8487f30,
+        type: 3}
     - target: {fileID: 6057433793135051245, guid: e3856509f1768e648be7716979093908,
         type: 3}
       propertyPath: m_Radius
