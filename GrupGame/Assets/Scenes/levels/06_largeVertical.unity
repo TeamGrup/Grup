@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -21208,6 +21208,16 @@ PrefabInstance:
     - target: {fileID: 2569272987331658906, guid: 72ae92b83f689c242b5182ab8e09d277,
         type: 3}
       propertyPath: yClamp
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 2569272987331658906, guid: 72ae92b83f689c242b5182ab8e09d277,
+        type: 3}
+      propertyPath: xClampMax
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2569272987331658906, guid: 72ae92b83f689c242b5182ab8e09d277,
+        type: 3}
+      propertyPath: yClampMax
       value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 2569272987331658907, guid: 72ae92b83f689c242b5182ab8e09d277,
@@ -99908,7 +99918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelToLoad: Credits
   SpawnLoc: 0
-  PollutantsCleared: 1
+  PollutantsCleared: 0
 --- !u!4 &1694713090
 Transform:
   m_ObjectHideFlags: 0
@@ -128470,6 +128480,11 @@ PrefabInstance:
       propertyPath: pollutants
       value: 
       objectReference: {fileID: 1075711343}
+    - target: {fileID: 8572096697927465958, guid: 897a9e041c0a8a84898ff111d1f78f31,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8572096697927465959, guid: 897a9e041c0a8a84898ff111d1f78f31,
         type: 3}
       propertyPath: m_LocalPosition.x
