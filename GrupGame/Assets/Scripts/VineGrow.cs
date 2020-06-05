@@ -28,7 +28,10 @@ public class VineGrow : MonoBehaviour {
   List<GameObject> growParts;
   int vineSize;
   GameObject[] leaves;
-  
+
+  public GameObject Emitter;
+  GameObject EmitterClone;
+  bool ORisActive = false;
 
   private void Start() {
     bc2D = GetComponent<BoxCollider2D>();
@@ -45,6 +48,18 @@ public class VineGrow : MonoBehaviour {
         grown = true;
       }
     }
+  }
+
+  void PlayEffect() {
+    if (!ORisActive) {
+      EmitterClone = Instantiate(Emitter, transform.position, Quaternion.identity);
+      ORisActive = true;
+    }
+  }
+
+  void DestroyEffect() {
+    Destroy(EmitterClone);
+    ORisActive = false;
   }
 
   void initailizeGrowObject() {
@@ -108,6 +123,7 @@ public class VineGrow : MonoBehaviour {
     if (collision.gameObject.tag == "Player") {
       Debug.Log("Plant is now growable.");
       growable = true;
+      PlayEffect();
     }
   }
 
@@ -115,6 +131,7 @@ public class VineGrow : MonoBehaviour {
     if (collision.gameObject.tag == "Player") {
       Debug.Log("Plant is not growable anymore.");
       growable = false;
+      DestroyEffect();
     }
   }
 }
