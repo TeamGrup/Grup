@@ -48,7 +48,7 @@ public class player : MonoBehaviour {
     {
         rb = GetComponent<Rigidbody2D>();
 
-        GetComponent<SpriteRenderer>().enabled = true;
+        GetComponent<SpriteRenderer>().enabled = false;
 
         Debug.Log($"Spawn Point: {StaticSceneInfo.GetSpawnPoint()}");
         origin = GameObject.FindGameObjectWithTag(StaticSceneInfo.GetSpawnPoint()).transform.position;
