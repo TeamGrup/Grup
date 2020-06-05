@@ -36,11 +36,14 @@ public class CameraFollow : MonoBehaviour {
 
     Vector3 desiredPosition = targetToFollow.transform.position + offset;
 
+    //Vector3 wallHit = new Vector3(Mathf.Clamp(desiredPosition.x, xClampMin, xClampMax)
+    //                                , Mathf.Clamp(desiredPosition.y, yClampMin, yClampMax)
+    //                                , desiredPosition.z);
     Vector3 wallHit = new Vector3(Mathf.Clamp(desiredPosition.x, xClampMin, xClampMax)
                                     , Mathf.Clamp(desiredPosition.y, yClampMin, yClampMax)
-                                    , desiredPosition.z);
+                                    , -1);
 
-    Vector3 smoothPosition = Vector3.Lerp(transform.position, wallHit, smoothSpeed);
+        Vector3 smoothPosition = Vector3.Lerp(transform.position, wallHit, smoothSpeed);
 
     transform.position = smoothPosition;
   }

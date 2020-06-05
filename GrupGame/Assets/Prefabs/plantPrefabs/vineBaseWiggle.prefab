@@ -154,7 +154,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  growSpeed: 0.34
+  growSpeed: 0.15
   useParticleSystem: 1
   growParticleSystem: {fileID: 2606911964881052585, guid: c3429a910c33a2b4bb72aadfec8fc65c,
     type: 3}

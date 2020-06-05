@@ -21,6 +21,10 @@ public class LevelTrigger : MonoBehaviour
                     StaticSceneInfo.Spawn = SpawnLoc;
                     SceneManager.LoadScene(LevelToLoad);
                 }
+                else
+                {
+                    // Pulse Pollutant Count
+                }
             }
             else
             {
