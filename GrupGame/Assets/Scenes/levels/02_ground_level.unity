@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2580,7 +2580,7 @@ PrefabInstance:
     - target: {fileID: 5266726589997873722, guid: 58075862001bf2e43ae4a74904097ffc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -34.703125
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5266726589997873722, guid: 58075862001bf2e43ae4a74904097ffc,
         type: 3}
@@ -3821,7 +3821,7 @@ PrefabInstance:
     - target: {fileID: 6855095492628667973, guid: d681de12588ef9645ae4f20d89f945fc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -34.902344
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6855095492628667973, guid: d681de12588ef9645ae4f20d89f945fc,
         type: 3}

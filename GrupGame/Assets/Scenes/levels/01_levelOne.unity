@@ -8345,6 +8345,11 @@ PrefabInstance:
       propertyPath: pollutants
       value: 
       objectReference: {fileID: 816892908}
+    - target: {fileID: 8572096697927465956, guid: 897a9e041c0a8a84898ff111d1f78f31,
+        type: 3}
+      propertyPath: PulseDuration
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8572096697927465958, guid: 897a9e041c0a8a84898ff111d1f78f31,
         type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
