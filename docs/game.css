@@ -1,0 +1,41 @@
+.space {
+	padding: 30px;
+}
+.game-body {
+	background-color: #ebecf0;
+	/*padding-top: 10px;*/
+	width: 1200px;
+	margin: auto;
+	border-radius: 15px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+
+p {
+	padding: 10px;
+	margin: 0px;
+	font-size: 22px;
+}
+
+#subtitle {
+	font-size: 20px;
+	text-align: center;
+}
+h1 {
+	padding: 10px;
+	text-align: center;
+	color: #b44353;
+	margin: 0px;
+}
+#game-pic {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.game-body a:link{
+	color: #b44353;
+}
+
+
+
