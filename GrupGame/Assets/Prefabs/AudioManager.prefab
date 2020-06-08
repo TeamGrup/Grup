@@ -151,5 +151,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 38ffd00b0baacc94696144153384e739, type: 3}
   - {fileID: 8300000, guid: 2b55246c2dd5a0e48a383ace5fb6d444, type: 3}
   - {fileID: 8300000, guid: 9addbad7bb8a69c489a121f92a08745c, type: 3}
+  - {fileID: 8300000, guid: 2b55246c2dd5a0e48a383ace5fb6d444, type: 3}
   - {fileID: 8300000, guid: 3e153f494452c4b42a4e646f2d43729f, type: 3}
   activeAudio: []
