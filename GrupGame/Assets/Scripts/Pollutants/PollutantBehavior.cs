@@ -45,6 +45,7 @@ public class PollutantBehavior : MonoBehaviour
         if (!ORisActive)
         {
             EmitterClone = Instantiate(Emitter, transform.position, Quaternion.identity);
+            EmitterClone.transform.SetParent(gameObject.transform);
             ORisActive = true;
         }
     }
