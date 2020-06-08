@@ -1699,7 +1699,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bee5c35fa4bd6284e8d0058426ba54e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioManager: {fileID: 0}
+  audioManager: {fileID: 5682660271326085565, guid: bddae2ca5c322c742bf9ea05a18c3ef9,
+    type: 3}
   mainMenuUI: {fileID: 6401804074411791740}
   pauseMenuUI: {fileID: 2499854546115305499}
   controlsMenuUI: {fileID: 20143340980839235}
