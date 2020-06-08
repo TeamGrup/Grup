@@ -1,16 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour {
 
   AudioSource effectSource;
-  AudioSource musicSource;
+  public AudioSource musicSource;
 
   public AudioClip buttonClick;
   public AudioClip buttonHighlight;
 
-  List<AudioClip> activeAudio;
+  public AudioClip[] BackgroundMusic;
+
+  public List<AudioClip> activeAudio;
 
   public static AudioManager instance = null;
 
@@ -32,7 +35,8 @@ public class AudioManager : MonoBehaviour {
 
   private void Start() {
     Initialized();
-    
+    SetBackgroundMusic(SceneManager.GetActiveScene().buildIndex);
+    PlayBackgroundMusic();
   }
 
   private void Initialized() {
@@ -57,4 +61,23 @@ public class AudioManager : MonoBehaviour {
     effectSource.Play();
   }
 
+  public void SetVolume(float volumeLevel) {
+    musicSource.volume = Mathf.Clamp01(volumeLevel);
+  }
+
+  public void SetBackgroundMusic(int index) {
+    musicSource.clip = BackgroundMusic[index];
+  }
+
+  public void PlayBackgroundMusic() {
+    StopBackgroundMusic();
+    musicSource.time = 0f;
+    musicSource.Play();
+    activeAudio.Add(musicSource.clip);
+  }
+
+  public void StopBackgroundMusic() {
+    musicSource.Stop();
+    activeAudio.Remove(musicSource.clip);
+  }
 }

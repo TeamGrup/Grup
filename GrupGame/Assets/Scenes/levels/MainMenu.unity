@@ -112,6 +112,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!82 &53406169 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5984696462186422599, guid: 715c4c756c20fef4dbcd5518170562ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 385570546}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &385570546
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -124,6 +130,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 645714118724442472, guid: 715c4c756c20fef4dbcd5518170562ad,
+        type: 3}
+      propertyPath: BackgroundMusic.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 645714118724442472, guid: 715c4c756c20fef4dbcd5518170562ad,
+        type: 3}
+      propertyPath: musicSource
+      value: 
+      objectReference: {fileID: 53406169}
     - target: {fileID: 1881591020138402895, guid: 715c4c756c20fef4dbcd5518170562ad,
         type: 3}
       propertyPath: m_textInfo.characterCount
