@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9161718259863185844}
   - component: {fileID: 8664444320913318759}
   - component: {fileID: 8970533394900778474}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: greenOrbPS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4674,7 +4674,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1393821195
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 20
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
