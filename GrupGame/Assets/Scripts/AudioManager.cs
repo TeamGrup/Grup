@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// https://www.purple-planet.com/
+/// </summary>
 public class AudioManager : MonoBehaviour {
 
-  AudioSource effectSource;
+  public AudioSource effectSource;
   public AudioSource musicSource;
 
   public AudioClip buttonClick;
@@ -39,30 +42,39 @@ public class AudioManager : MonoBehaviour {
     PlayBackgroundMusic();
   }
 
+ 
+
   private void Initialized() {
-    effectSource = GetComponent<AudioSource>();
     activeAudio = new List<AudioClip>();
     buttonClick = Resources.Load<AudioClip>("Sound\button_select");
     buttonHighlight = Resources.Load<AudioClip>("Sound\button_highlight");
   }
 
+  public void StopEffect() {
+    effectSource.Stop();
+  }
   public void PlayClip(AudioClip  clip) {
+    StopEffect();
     effectSource.clip = clip;
     effectSource.Play();
   }
 
   public void ButtonClick() {
+    effectSource.Stop();
     effectSource.clip = buttonClick;
+    effectSource.time = 0f;
     effectSource.Play();
   }
 
   public void ButtonHighlight() {
+    effectSource.Stop();
     effectSource.clip = buttonHighlight;
+    effectSource.time = 0f;
     effectSource.Play();
   }
 
   public void SetVolume(float volumeLevel) {
-    musicSource.volume = Mathf.Clamp01(volumeLevel);
+    musicSource.volume = volumeLevel;
   }
 
   public void SetBackgroundMusic(int index) {

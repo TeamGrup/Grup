@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
   public AudioManager audioManager;
-
+  public AudioClip[] menuEffects;
 
   public static bool isPaused = false;
 
@@ -26,6 +26,7 @@ public class MainMenu : MonoBehaviour {
   // Update is called once per frame
   void Update() {
     if (Input.GetKeyDown(KeyCode.Escape)) {
+      audioManager.ButtonClick();
       if (isPaused) {
         ResumeGame();
       } else {

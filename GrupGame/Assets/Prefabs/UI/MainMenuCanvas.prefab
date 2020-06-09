@@ -706,6 +706,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5682660271326085565, guid: bddae2ca5c322c742bf9ea05a18c3ef9,
+          type: 3}
+        m_MethodName: ButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!95 &7978244134653513136
 Animator:
   serializedVersion: 3
@@ -1701,6 +1713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioManager: {fileID: 5682660271326085565, guid: bddae2ca5c322c742bf9ea05a18c3ef9,
     type: 3}
+  menuEffects: []
   mainMenuUI: {fileID: 6401804074411791740}
   pauseMenuUI: {fileID: 2499854546115305499}
   controlsMenuUI: {fileID: 20143340980839235}
@@ -2073,7 +2086,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1216731701821548666, guid: bddae2ca5c322c742bf9ea05a18c3ef9,
+          type: 3}
         m_MethodName: ButtonClick
         m_Mode: 1
         m_Arguments:
