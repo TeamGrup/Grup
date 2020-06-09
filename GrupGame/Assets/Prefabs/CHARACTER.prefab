@@ -226,8 +226,9 @@ MonoBehaviour:
   gravity: 1.31
   fallMultiplier: 5.46
   onGround: 0
-  groundLength: 0.95
-  colliderOffset: {x: 0.39, y: 0, z: 0}
+  groundLength: 1.05
+  colliderOffset: {x: 0.14, y: 0, z: 0}
+  colliderCenter: {x: 0.2, y: 0, z: 0}
   hitSomething: 0
   trampolineSpeed: 20
   numberOfJumps: 0
@@ -244,7 +245,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.01398766, y: 0.21090443}
+  m_Offset: {x: -0.19, y: 0.17}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -255,7 +256,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1398764, y: 1.4028066}
+  m_Size: {x: 1.02, y: 1.4028066}
   m_EdgeRadius: 0
 --- !u!70 &958491718610117972
 CapsuleCollider2D:
@@ -270,8 +271,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.019880924, y: 0}
-  m_Size: {x: 1.1602379, y: 1.82}
+  m_Offset: {x: -0.195, y: -0.08}
+  m_Size: {x: 1.02, y: 1.8}
   m_Direction: 0
 --- !u!212 &3564376672530829731
 SpriteRenderer:
