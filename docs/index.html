@@ -1,68 +1,104 @@
-<html>
-<head>
-	<title>Welcome to the world of Grup</title
-</head>
+<!-- THINGS NEEDED
+1. Description - Description of the game, influences from history or other games on you as
+	a designer that led to this game, what is unique about the game, and major features of
+	the game. You may also want to list Platforms, Rating, Launch Date and other highlights.
+2. Development Log - Dated entries indicating the status of the project. It must include 1)
+	what has been recently completed 2) what each person is currently working on 3) what
+	features/ideas or on the backlog are to be done next 4) Analysis of playtesting (probably
+	as a separate page) 5) Obstacles that are blocking development 6) Reflection on game
+	and process. What is working, what is not working. This represents your
+	work-in-progress. Do not backdate any items. If you forget to report a playtesting session
+	that happened a month ago, enter it as a new entry for today and indicate you are
+	reporting on an older playtest.
+3. Playable Game - A WebGL build of the game that can be played in the browser.
+	Optionally you may want to include Windows, Mac or other executables.
+4. Playtesting Reports - At least three sets of playtesting reports showing how the game
+	was playtested and what decisions were reached. The playtests need to happen at
+	different development phases. The final playtest should include description of the last set
+	of changes you plan to make to the game as well as recommendations for future extensions 
+	that you did not get to implement.
+5. Credits - Names of team members and their primary roles, possibly a contact email for
+	the team
+6. References - Each piece of asset in the game (each image, model, texture, sound,
+	script, etc) that you did not produce yourself needs to be documented. You can
+	reference Unity Standard Assets
+	https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-32351
+	and Unity Playground assets
+	https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-playground-1099
+	17 as one item, but anything beyond that has to be documented individually. This means
+	you should not import an "asset package" with 100+ assets, but selectively import assets
+	one-by-one. You must have the rights to use the assets in your game, so no commercial
+	songs or images. Do not purchase any assets. This is a class project, design within the
+	constraints.
+7. Trailer - A 30-60 trailer for your game on https://www.twitch.tv/ The video should not be
+	the first 30 seconds of your game, but interesting segments from the game. Optionally,
+	you can include a longer, up to 10 minute, overview of your game.
+8. Screenshots - 5 screenshots that is representative of your game.
+9. Source Code - Source code for your game. Include a Readme.txt file with your source
+	code indicating which version of Unity you have used and the URL to your game's
+	website.
+10. Game Presentation - A copy of your final presentation that you presented on demo-day.
+	The presentation should be a maximum of 5 slides.
+12. Team Reflection - Reflect on your process as well as answering the following questions:
+	What is the one thing your team did really well? What evidence can you show for it? If
+	you had another 2-weeks to work on the game, what would be the 3 highest priority
+	items. 1-2 paragraphs
 
-<body>
-	<style>
-		body {
-			background-color: rgb(60, 60, 60);
-			font-size: 20pt;
-		}
-		
-		div.blog {
-			position: absolute;
-			top: 30px;
-			left: 200px;
-		}
-		
-		div.download {
-			position: absolute;
-			top: 90px;
-			left: 200px;
-		}
-		
-		div.beta {
-			position: absolute;
-			top: 150px;
-			left: 200px;
-		}
-		
-		div.beta-feedback {
-			position: absolute;
-			top: 210px;
-			left: 200px;
-		}
-		
-		a:link {
-			color: white;
-		}
-		
-		a:hover {
-			color: rgb(178, 69, 84);
-		}
+todo -- make button back to home
+-->
 
-		a:visited {
-			color: white;
-		}
-	</style>
-	
-	<center><img src="6.png"/></center>
-	
-	<div class="blog">
-		<a href="https://github.com/TeamGrup/Grup/wiki">Blog</a>
-	</div>
-	
-	<div class="download">
-		<a href="Grup-Alpha.zip">Alpha Build Download</a>
-	</div>
-	
-	<div class="beta">
-		<a href="BetaTestBuild/index.html">Play the Beta</a>
-	</div>
-	<div class="beta-feedback">
-		<a href="https://docs.google.com/forms/d/e/1FAIpQLSfg_LMSmdQl2OIo0zscKLuGZZCS0xg32bWAzMacFvEzZA-L_w/viewform">Beta Feedback</a>
-	</div>
-</body>
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>The World of Grup</title>
+		<meta name="description" content="A webpage created for the final project of CSS 385, Spring 2020. Grup is an independently created 
+		2D platformer by Ed Abshire, Erica Ferguson, Shannon Evans, and Scott Shirley."> 
+		<link rel="stylesheet" href="index.css">
+	</head>
+
+	<body>
+		<!-- Top navigation -->
+		<div class="topnav">
+			<!-- Centered link -->
+			<div class="topnav-centered">
+				<a href="index.html" id="the_title">
+					<img src="title.png" alt="title" height="45" width="100">
+				</a>
+			</div>
+
+			<!-- Left-aligned links (default) -->
+			<a href="about.html">About</a> <!-- will include trailer, description, screenshots, source code--> 
+			<a href="game.html">Play Game</a> <!-- includes playable game (webgl, other builds) -->
+
+			<!-- Right-aligned links -->
+			<div class="topnav-right">
+				<a href="backlog.html">Creation Process</a> <!-- will include dev log, playtesting reports, game presentation, team reflection -->
+				<a href="credit.html">Credits</a> <!-- credits & references -->
+			</div>
+		</div>
+		<!--<ul id="navbar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html">News</a></li>
+			<li><a href="index.html" id="rightside">Contact</a></li>
+			<li><a href="index.html" id="rightside">About</a></li>
+		</ul> -->
+		<center><img src="6.png"/></center>
+		
+		
+		
+		
+		<!--
+		<div class="blog">
+			<a href="https://github.com/TeamGrup/Grup/wiki">Blog</a>
+		</div>
+		
+		<div class="download">
+			<a href="Grup-Alpha.zip">Alpha Build Download</a>
+		</div>
+		
+		<div class="beta">
+			<a href="BetaTestBuild/index.html">Play the Beta</a>
+		</div>-->
+	</body>
 
 </html>
