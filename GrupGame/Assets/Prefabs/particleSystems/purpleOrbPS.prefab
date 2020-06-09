@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9161718259863185844}
   - component: {fileID: 8664444320913318759}
   - component: {fileID: 8970533394900778474}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: purpleOrbPS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7007118552686883872}
   m_LocalRotation: {x: -0.9999292, y: -0, z: -0, w: -0.011901141}
-  m_LocalPosition: {x: 1.753, y: -0.597, z: -10.038}
+  m_LocalPosition: {x: 1.753, y: -0.597, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

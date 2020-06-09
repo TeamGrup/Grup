@@ -60,6 +60,7 @@ public class PollutantBehavior : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            Debug.Log("Play effect here");
             PlayEffect();
         }
     }
