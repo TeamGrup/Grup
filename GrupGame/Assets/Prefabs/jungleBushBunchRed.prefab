@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3606007707320958919}
   - component: {fileID: 1855761719777789958}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pngfuel.com (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1645686012656261811}
   - component: {fileID: 1645686012656261808}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: jungle_bush_a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1645686012689240378}
   - component: {fileID: 1645686012689240379}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: jungle_bush_c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1645686012883268425}
   - component: {fileID: 1645686012883268430}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: jungle_bush_d
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1645686013064366104}
   - component: {fileID: 1645686013064366105}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: jungle_bush_b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 1645686013674283626}
   - component: {fileID: 1645686013674283627}
   - component: {fileID: 1645686013674283624}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: jungleBushBunchRed
   m_TagString: Plant
   m_Icon: {fileID: 0}
@@ -477,7 +477,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2566005845912912572}
   - component: {fileID: 8081127416291432151}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pngfuel.com (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -556,7 +556,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3585812959044080257}
   - component: {fileID: 8237919474067380310}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pngfuel.com (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -634,7 +634,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8639378367774352792}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Leaves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -669,7 +669,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1647561318336433663}
   - component: {fileID: 2401038361258349720}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pngfuel.com (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -747,7 +747,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5864893749394463318}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Flowers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
