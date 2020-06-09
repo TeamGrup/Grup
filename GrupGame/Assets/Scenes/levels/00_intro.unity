@@ -1333,8 +1333,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.1
   frequency: 0.7
-  TimeUntilFadeOut: 2
-  FadeOutCount: 0.5
+  TimeUntilFadeOut: 1
+  FadeOutCount: 0.7
 --- !u!1001 &887470208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2327,7 +2327,7 @@ Light:
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 29.62
-  m_Range: 18.488743
+  m_Range: 15.498444
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
