@@ -247,7 +247,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f16d577504048ce4395221446e918dd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  greenOrb: {fileID: 0}
+  blueOrb: {fileID: 0}
+  purpleOrb: {fileID: 0}
   pushbackForce: 10
+  Emitter: {fileID: 7007118552686883872, guid: 48ff851765d25bb488fd3321b89f4467, type: 3}
+  PSisactive: 0
   RotationSpeed: 1
 --- !u!1 &838629384773677810
 GameObject:

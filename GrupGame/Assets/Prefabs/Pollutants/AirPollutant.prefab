@@ -179,7 +179,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc8bbb6a0170ef0488d2ef6079b4ea90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  greenOrb: {fileID: 0}
+  blueOrb: {fileID: 0}
+  purpleOrb: {fileID: 0}
   pushbackForce: 10
+  Emitter: {fileID: 7007118552686883872, guid: 3959f18e052bd8f47a5c0493628bcb08, type: 3}
+  PSisactive: 0
   X_Amplitude: 1
   Y_Amplitude: 0.25
   X_Frequency: 0.5

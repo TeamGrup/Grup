@@ -154,10 +154,11 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  growSpeed: 0.34
+  growSpeed: 0.15
   useParticleSystem: 1
   growParticleSystem: {fileID: 2606911964881052585, guid: c3429a910c33a2b4bb72aadfec8fc65c,
     type: 3}
+  Emitter: {fileID: 7007118552686883872, guid: 13c797e1a7b008b4c80c463c6024915f, type: 3}
 --- !u!95 &4066385847168551341
 Animator:
   serializedVersion: 3
@@ -572,17 +573,17 @@ PrefabInstance:
     - target: {fileID: 1376638132800678002, guid: feff2ba53a8a1bd4ea06bd688b643f93,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.6998291
+      value: -0.756
       objectReference: {fileID: 0}
     - target: {fileID: 1376638132800678002, guid: feff2ba53a8a1bd4ea06bd688b643f93,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.15997314
+      value: 0.168
       objectReference: {fileID: 0}
     - target: {fileID: 1376638132800678002, guid: feff2ba53a8a1bd4ea06bd688b643f93,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.001
       objectReference: {fileID: 0}
     - target: {fileID: 1376638132800678002, guid: feff2ba53a8a1bd4ea06bd688b643f93,
         type: 3}

@@ -6,6 +6,12 @@ public class LevelTrigger : MonoBehaviour
     public string LevelToLoad;
     public StaticSceneInfo.SpawnPoint SpawnLoc;
     public bool PollutantsCleared = true;
+    private UIScript ui;
+
+    private void Start()
+    {
+        ui = GameObject.FindObjectOfType<UIScript>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -20,6 +26,11 @@ public class LevelTrigger : MonoBehaviour
                     gs.SaveScene();
                     StaticSceneInfo.Spawn = SpawnLoc;
                     SceneManager.LoadScene(LevelToLoad);
+                }
+                else
+                {
+                    // Pulse Pollutant Count
+                    ui.Pulse();
                 }
             }
             else

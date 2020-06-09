@@ -60,11 +60,12 @@ public class nature_saturate : MonoBehaviour {
     Transform parent = transform.Find(strParent);
     list = new List<GameObject>();
 
-    foreach (Transform child in parent) {
-      list.Add(child.gameObject);
-      child.GetComponent<SpriteRenderer>().material = materials[listIndex];
+    if (transform.childCount > 0) {
+      foreach (Transform child in parent) {
+        list.Add(child.gameObject);
+        child.GetComponent<SpriteRenderer>().material = materials[listIndex];
+      }
     }
-
     return list;
   }
 

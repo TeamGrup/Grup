@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: cavelichen
+  m_Shader: {fileID: 4800000, guid: ea6a8739918b60c4c8f377169d755c4b, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _EMISSION _GLOSSYREFLECTIONS_OFF _RECEIVE_SHADOWS_OFF
+    _SPECULARHIGHLIGHTS_OFF
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - SHADOWCASTER
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_DE84BA06:
+        m_Texture: {fileID: 2800000, guid: 5023e4435f7a80e4280249afbbe44340, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LichenMainText:
+        m_Texture: {fileID: 2800000, guid: 5023e4435f7a80e4280249afbbe44340, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_407DB84D: 1
+    - Vector1_593FAC7E: 0.05
+    - _LichenSaturation: 1
+    - _LichenTwinkle: 0.05
+    m_Colors:
+    - Color_B91E747C: {r: 0, g: 1, b: 0.21154377, a: 0}
+    - _LichenEmmisionColor: {r: 0, g: 1, b: 0.19607843, a: 1}

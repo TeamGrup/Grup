@@ -222,7 +222,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e114866e0579bd4497049671d750f0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  greenOrb: {fileID: 0}
+  blueOrb: {fileID: 0}
+  purpleOrb: {fileID: 0}
   pushbackForce: 10
+  Emitter: {fileID: 7007118552686883872, guid: f2d9c4deb39c08447b208a8e97dc2d51, type: 3}
+  PSisactive: 0
   amplitude: 0.5
   frequency: 1
 --- !u!1 &6218889092079947749

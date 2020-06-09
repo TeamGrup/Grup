@@ -27,7 +27,7 @@ TagManager:
   - Player
   - Pollution
   - Plant
-  - 
+  - Background
   - 
   - 
   - 
@@ -47,6 +47,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1025265957
+    locked: 0
+  - name: Bg 2
+    uniqueID: 1106400561
+    locked: 0
+  - name: Bg3
+    uniqueID: 4135749231
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 2663480423
+    locked: 0
+  - name: Decorators
+    uniqueID: 1393821195
     locked: 0

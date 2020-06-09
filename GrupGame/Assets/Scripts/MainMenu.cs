@@ -4,9 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
-  AudioManager audioManager;
-
-
+  public AudioManager audioManager;
+  public AudioClip[] menuEffects;
 
   public static bool isPaused = false;
 
@@ -15,10 +14,20 @@ public class MainMenu : MonoBehaviour {
   public GameObject controlsMenuUI;
   public GameObject levelSelectMenuUI;
 
+  
+
+  private void Start() {
+    if (SceneManager.GetActiveScene().buildIndex == 0) {
+      //audioManager.SetBackgroundMusic(0);
+      //audioManager.PlayBackgroundMusic();
+    }
+    
+  }
 
   // Update is called once per frame
   void Update() {
     if (Input.GetKeyDown(KeyCode.Escape)) {
+      audioManager.ButtonClick();
       if (isPaused) {
         ResumeGame();
       } else {
@@ -35,12 +44,14 @@ public class MainMenu : MonoBehaviour {
     pauseMenuUI.SetActive(true);
     Time.timeScale = 0f;
     isPaused = true;
+    audioManager.SetVolume(0.5f);
   }
 
   public void ResumeGame() {
     pauseMenuUI.SetActive(false);
     Time.timeScale = 1f;
     isPaused = false;
+    audioManager.SetVolume(1.0f);
   }
 
   public void LoadMenu() {
@@ -55,7 +66,7 @@ public class MainMenu : MonoBehaviour {
 
   }
 
-  
+
 
   public void BackMenu() {
     Time.timeScale = 1f;
@@ -86,6 +97,8 @@ public class MainMenu : MonoBehaviour {
   public void LoadMain() {
     ResumeGame();
     SceneManager.LoadScene(0);
+    audioManager.SetBackgroundMusic(0);
+    audioManager.PlayBackgroundMusic();
   }
 
   public void LoadIntro() {

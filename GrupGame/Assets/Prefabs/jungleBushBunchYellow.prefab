@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1645686012656261811}
   - component: {fileID: 1645686012656261808}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: jungle_bush_a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,8 +65,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1393821195
+  m_SortingLayer: 2
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: e3b4c511fe84109469d3e510ec44a7a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1645686012689240378}
   - component: {fileID: 1645686012689240379}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: jungle_bush_c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,8 +144,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1393821195
+  m_SortingLayer: 2
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300004, guid: e3b4c511fe84109469d3e510ec44a7a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -168,7 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1645686012883268425}
   - component: {fileID: 1645686012883268430}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: jungle_bush_d
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,8 +223,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1393821195
+  m_SortingLayer: 2
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300006, guid: e3b4c511fe84109469d3e510ec44a7a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -247,7 +247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1645686013064366104}
   - component: {fileID: 1645686013064366105}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: jungle_bush_b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,8 +302,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1393821195
+  m_SortingLayer: 2
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300002, guid: e3b4c511fe84109469d3e510ec44a7a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -328,7 +328,7 @@ GameObject:
   - component: {fileID: 1645686013674283627}
   - component: {fileID: 1645686013674283624}
   - component: {fileID: 114036169874579540}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: jungleBushBunchYellow
   m_TagString: Plant
   m_Icon: {fileID: 0}
@@ -410,7 +410,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8639378367774352792}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Leaves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -446,7 +446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5582412122183512376}
   - component: {fileID: 8480274173349347648}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pngfuel.com (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -501,8 +501,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1393821195
+  m_SortingLayer: 2
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 4e551065b15b47744b4969575616553f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -525,7 +525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8223860007105586026}
   - component: {fileID: 880584566043927528}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pngfuel.com (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -580,8 +580,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1393821195
+  m_SortingLayer: 2
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 4e551065b15b47744b4969575616553f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -604,7 +604,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2311179513923198392}
   - component: {fileID: 8858254879804065145}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pngfuel.com (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -659,8 +659,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1393821195
+  m_SortingLayer: 2
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 4e551065b15b47744b4969575616553f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -683,7 +683,7 @@ GameObject:
   m_Component:
   - component: {fileID: 260033234228371601}
   - component: {fileID: 8071146563836785898}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: jungle_bush_c (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -738,8 +738,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1393821195
+  m_SortingLayer: 2
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300004, guid: e3b4c511fe84109469d3e510ec44a7a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -761,7 +761,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5864893749394463318}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Flowers
   m_TagString: Untagged
   m_Icon: {fileID: 0}

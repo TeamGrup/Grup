@@ -34,6 +34,7 @@ public class player : MonoBehaviour {
     public bool onGround = false;
     public float groundLength = 0.6f;
     public Vector3 colliderOffset;
+    public Vector3 colliderCenter;
     public bool hitSomething = false;
 
     private Vector3 origin;
@@ -48,7 +49,7 @@ public class player : MonoBehaviour {
     {
         rb = GetComponent<Rigidbody2D>();
 
-        GetComponent<SpriteRenderer>().enabled = true;
+        GetComponent<SpriteRenderer>().enabled = false;
 
         Debug.Log($"Spawn Point: {StaticSceneInfo.GetSpawnPoint()}");
         origin = GameObject.FindGameObjectWithTag(StaticSceneInfo.GetSpawnPoint()).transform.position;
@@ -78,6 +79,7 @@ public class player : MonoBehaviour {
 
     void FixedUpdate() {
         moveCharacter(direction.x, direction.y);
+
         if(jumpTimer > Time.time && onGround){
             Jump();
         }
@@ -88,8 +90,8 @@ public class player : MonoBehaviour {
     void DetectJump()
     {
         // These detect if the player is currently on the ground
-        bool RightRaycast = Physics2D.Raycast(transform.position + colliderOffset, Vector2.down, groundLength, groundLayer);
-        bool LeftRaycast = Physics2D.Raycast(transform.position - colliderOffset, Vector2.down, groundLength, groundLayer);
+        bool RightRaycast = Physics2D.Raycast(transform.position + colliderOffset - colliderCenter, Vector2.down, groundLength, groundLayer);
+        bool LeftRaycast = Physics2D.Raycast(transform.position - colliderOffset - colliderCenter, Vector2.down, groundLength, groundLayer);
 
         // If either are on ground, jump is good to go
         onGround = RightRaycast || LeftRaycast;
@@ -156,12 +158,13 @@ public class player : MonoBehaviour {
     void Flip() {
         facingRight = !facingRight;
         transform.rotation = Quaternion.Euler(0, facingRight ? 0 : 180, 0);
+        colliderCenter *= -1;
     }
 
     private void OnDrawGizmos() {
         Gizmos.color = Color.red;
-        Gizmos.DrawLine(transform.position + colliderOffset, transform.position + colliderOffset + Vector3.down * groundLength);
-        Gizmos.DrawLine(transform.position - colliderOffset, transform.position - colliderOffset + Vector3.down * groundLength);
+        Gizmos.DrawLine(transform.position + colliderOffset - colliderCenter, transform.position + colliderOffset - colliderCenter + Vector3.down * groundLength);
+        Gizmos.DrawLine(transform.position - colliderOffset - colliderCenter, transform.position - colliderOffset - colliderCenter + Vector3.down * groundLength);
     }
 
     public void ResetOrigin()
