@@ -13850,10 +13850,20 @@ PrefabInstance:
       propertyPath: yClampMax
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 2569272987331658906, guid: 72ae92b83f689c242b5182ab8e09d277,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2569272987331658907, guid: 72ae92b83f689c242b5182ab8e09d277,
         type: 3}
       propertyPath: m_Name
       value: MainCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 2569272987331658907, guid: 72ae92b83f689c242b5182ab8e09d277,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2569272987331659110, guid: 72ae92b83f689c242b5182ab8e09d277,
         type: 3}
