@@ -27,6 +27,11 @@ public class WASDbehavior : MonoBehaviour
     {
         sprite = gameObject.GetComponent<SpriteRenderer>();
         arrow = GameObject.Find("Arrow");
+        if(StaticSceneInfo.GetSpawnPoint() != "EntrySpawn")
+        {
+            Debug.Log("Enablings");
+            gameObject.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -69,14 +74,16 @@ public class WASDbehavior : MonoBehaviour
     void FadeThenDestruct()
     {   
         FadeTimer += Time.smoothDeltaTime;
-        float OverallTime = FadeOutCount/FadeTimer;
+        float OverallTime = FadeTimer/FadeOutCount;
+
+        Debug.Log(OverallTime);
 
         Color opacityFade = new Color(1,1,1,1-OverallTime);
 
         sprite.color = opacityFade;
         arrow.GetComponent<SpriteRenderer>().color = opacityFade;
         
-        if(OverallTime <= 0)
+        if(OverallTime >= FadeOutCount)
         {
             gameObject.SetActive(false);
         }
