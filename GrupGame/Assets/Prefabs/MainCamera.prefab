@@ -99,5 +99,9 @@ MonoBehaviour:
   smoothSpeed: 0.125
   offset: {x: 2.5, y: 2.5, z: -1}
   direction: 1
-  xClamp: 28
-  yClamp: 13
+  xClampMax: 10
+  yClampMax: 10
+  xClampMin: -4
+  yClampMin: -4
+  Up: 3
+  Down: 3
