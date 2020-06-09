@@ -50,13 +50,13 @@ public class CameraFollow : MonoBehaviour {
 
   void LookUpAndDown() {
     if (Input.GetAxis("Vertical") < -.4) {
-      Vector3 newPosition = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y + -Mathf.Abs(Down), yClampMin, yClampMax), 0); // ? dont declare new variable here
+      Vector3 newPosition = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y + -Mathf.Abs(Down), yClampMin, yClampMax), -1); // ? dont declare new variable here
       smoothLookPos = Vector3.Lerp(transform.position, newPosition, smoothSpeed);
       transform.position = smoothLookPos;
     }
 
     if (Input.GetAxis("Vertical") > .4) {
-      Vector3 newPosition = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y + Mathf.Abs(Up), yClampMin, yClampMax), 0);
+      Vector3 newPosition = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y + Mathf.Abs(Up), yClampMin, yClampMax), -1);
       smoothLookPos = Vector3.Lerp(transform.position, newPosition, smoothSpeed);
       transform.position = smoothLookPos;
     }
