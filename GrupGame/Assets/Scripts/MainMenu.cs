@@ -21,6 +21,7 @@ public class MainMenu : MonoBehaviour {
       //audioManager.SetBackgroundMusic(0);
       //audioManager.PlayBackgroundMusic();
     }
+    this.transform.parent.gameObject.SetActive(true);
   }
 
   // Update is called once per frame

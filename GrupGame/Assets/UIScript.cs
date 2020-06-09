@@ -21,6 +21,8 @@ public class UIScript : MonoBehaviour
         text = pollutantCounter.GetComponent<TextMeshProUGUI>();
         staticTextRect = staticPollutantText.GetComponent<RectTransform>();
         textRect = pollutantCounter.GetComponent<RectTransform>();
+        this.gameObject.SetActive(true);
+   
     }
 
     // Update is called once per frame
