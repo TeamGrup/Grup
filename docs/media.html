@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang = "en">
 	<head>
@@ -6,7 +5,7 @@
 		<meta name="description" content="A webpage created for the final project of CSS 385, Spring 2020. Grup is an independently created 
 		2D platformer by Ed Abshire, Erica Ferguson, Shannon Evans, and Scott Shirley."> 
 		<link rel="stylesheet" href="index.css">
-		<link rel="stylesheet" href="about.css">
+		<link rel="stylesheet" href="media.css">
 	</head>
 
 	<body>
@@ -33,16 +32,27 @@
 		</div>
 		
 		<div class="space"> </div>
-		<div class="about-body">
-			<h1> ABOUT </h1>
-			<p id="subtitle"> Learn more about Grup! </p>
-			<p>Grup is the work of <a href="credit.html">four talented individuals</a> for their University of Washington Bothell CSS 385 Game Design class.  We started with a piece of art
-			and an idea and ran with it. We knew that we wanted the game to be laid back, relaxed, and casual.  We wanted a small challenge on the platforming levels 
-			and a nice visual reward when the player clears the pollutants.</p>
-			<p>We also wanted to make a statement, that even the smallest actions can have an impact, especially when it comes to the environment.  That is why 
-			each pollutant cleared returns color to the neighboring area. Grup's world is not huge, but Grup's actions make an impact in their world.</p>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/Zcjy1ynQ1tQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--TODO - replace with our trailer --> 
-			<p> will need to continue description, source code (?) </p>
+		<div class="media-body">
+			<h1>Grup Media</h1>
+			Here is all media for Grup that we want to share with world.
+			<h3>Trailer</h3>
+			<!-- Link to trailer here -->
+			<h3>Screenshots</h3>
+			<div id="carousel">
+				<img id="img-container" src="screenshots" alt="Container Text" />
+				<div id="img-desc"></div>
+			</div>
+			<div id="carouselCycle">
+				<button id="prev">Prev</button><label for="auto">Auto-Cycle</label><input id="auto" type="checkbox" /><button id="next">Next</button>
+			</div>
+
+			<ul id="carouselList">
+				<!-- Insert screenshots here -->
+				<!-- <li data-img="screenshots/<imagenamehere>.png">Img Desc Here</li> -->
+				<li data-img="screenshots/grup_intro.png">A Dark Beginning</li>
+				<li data-img="screenshots/gruplevel6ss.png">Grup Level 6</li>
+			</ul>
+			<script src="carousel.js"></script>
 		</div>
 	</body>
 

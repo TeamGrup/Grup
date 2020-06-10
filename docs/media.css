@@ -1,0 +1,85 @@
+.space {
+	padding: 30px;
+}
+.media-body {
+	background-color: #ebecf0;
+	/*padding-top: 10px;*/
+	width: 1200px;
+	margin: auto;
+	border-radius: 15px;
+	text-align: center;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+
+p {
+	padding: 10px;
+	margin: 0px;
+	font-size: 22px;
+}
+
+#subtitle {
+	font-size: 20px;
+	text-align: center;
+}
+h1 {
+	padding: 10px;
+	text-align: center;
+	color: #b44353;
+	margin: 0px;
+}
+
+h3 {
+	padding: 10px;
+	text-align: center;
+	color: #b44353;
+	margin: 0px;
+}
+
+#game-pic {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+button {
+    margin: 5px;
+    border: 1px solid black;
+}
+
+button:hover {
+    background-color: rgb(178, 69, 84);
+}
+
+#carousel {
+    /*width: 800px;*/
+    /*height:600px;*/
+    text-align: center;
+    margin: auto auto;
+}
+
+#carouselCycle {
+    margin-top: 5px;
+    text-align:center;
+	font-size: 50%;
+}
+
+#carouselList {
+    display: none;
+}
+
+#img-container {
+	width: 640px;
+	height: 360px;
+	/* 16:9 resolutions: 800x450, 640x360 or 512x288 */
+}
+
+#img-desc {
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    text-align: center;
+    font-weight: 300;
+    font-size: 90%;
+}
+
+
