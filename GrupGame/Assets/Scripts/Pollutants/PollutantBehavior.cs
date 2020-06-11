@@ -38,8 +38,10 @@ public class PollutantBehavior : MonoBehaviour {
     if (!ORisActive) {
       Vector3 pos = transform.position;
       pos.z -= 0.5f;
+      Vector3 size = transform.localScale;
       EmitterClone = Instantiate(Emitter, pos, Quaternion.identity);
       EmitterClone.transform.SetParent(gameObject.transform);
+      EmitterClone.transform.localScale = size;
       ORisActive = true;
     }
   }
