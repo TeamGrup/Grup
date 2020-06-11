@@ -12,14 +12,17 @@ public class AudioManager : MonoBehaviour {
   [Range(0f, 1.0f)]
   public float volume = 0.6f;
 
+  [Header("Audio Sources")]
   public AudioSource effectSource;
   public AudioSource musicSource;
 
   public AudioClip buttonClick;
   public AudioClip buttonHighlight;
 
+  [Header("Level Audio")]
   public AudioClip[] BackgroundMusic;
 
+  [Header("List of all active sounds in scene.")]
   public List<AudioClip> activeAudio;
 
   public static AudioManager instance = null;
