@@ -82,4 +82,14 @@ public class GlobalTrackerBehavior : MonoBehaviour
             }
         }
     }
+
+    public void ResetLevels()
+    {
+        foreach(var level in levels)
+        {
+            level.LevelObjects.Clear();
+        }
+
+        levels.Clear();
+    }
 }
