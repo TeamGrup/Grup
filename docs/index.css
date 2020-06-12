@@ -3,37 +3,6 @@ body {
 	font-size: 20pt;
 }
 			
-div.blog {
-	position: absolute;
-	top: 30px;
-	left: 200px;
-	
-}
-			
-div.download {
-	position: absolute;
-	top: 90px;
-	left: 200px;
-}
-			
-div.beta {
-	position: absolute;
-	top: 150px;
-	left: 200px;
-}
-			
-/*a:link {
-	color: white;
-}
-			
-a:hover {
-	color: rgb(178, 69, 84);
-}
-
-a:visited {
-	color: white;
-}*/
-
 /* Add a black background color to the top navigation */
 .topnav {
   /*position: relative;*/
@@ -90,3 +59,22 @@ a:visited {
   float: right;
 }
 
+.topquote {
+	color: rgb(178, 69, 84);
+	font-style: italic;
+	font-weight: bold;
+	font-size: 36pt;
+	text-align: center;
+}
+
+.bottomquote {
+	color: rgb(178, 69, 84);
+	font-style: italic;
+	font-weight: bold;
+	font-size: 36pt;
+	text-align: center;
+}
+
+.main-body {
+	padding: 100px;
+}
