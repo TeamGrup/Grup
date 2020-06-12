@@ -38,10 +38,10 @@ h1 {
 }*/
 .img__wrap {
   position: relative;
-  height: 200px;
-  width: 257px;
-  padding-left: 20px;
-  padding-right:20px;
+  height: 260px;		
+  width: 238px;
+  padding-left: 28px;
+  padding-right: 28px;
   float: left;
 }
 
@@ -55,8 +55,8 @@ h1 {
   color: #fff;
   visibility: hidden;
   opacity: 0; 
-  height: 180px;
-  width: 220px;
+  height: 250px;	
+  width: 255px;	
   font-size: 40px;
   text-align: center;
   font-family: Courier, monospace;
