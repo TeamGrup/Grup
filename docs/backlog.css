@@ -58,5 +58,11 @@ iframe {
 	margin: 0 auto;
 }
 
+.vine {
+	display:block;
+	align: middle;
+	margin: 0 auto;
+	height: 50px;
+}
 
 
