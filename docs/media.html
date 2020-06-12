@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>The World of Grup</title>
+		<meta name="description" content="A webpage created for the final project of CSS 385, Spring 2020. Grup is an independently created 
+		2D platformer by Ed Abshire, Erica Ferguson, Shannon Evans, and Scott Shirley."> 
+		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="media.css">
+		<link rel="stylesheet" href="footer.css">
+	</head>
+
+	<body>
+		<!-- Top navigation -->
+		<div class="topnav">
+			<!-- Centered link -->
+			<div class="topnav-centered">
+				<a href="index.html" id="the_title">
+					<img src="title.png" alt="title" height="45" width="100">
+				</a>
+			</div>
+
+			<!-- Left-aligned links (default) -->
+			<a href="about.html">About</a> <!-- will include trailer, description, screenshots, source code--> 
+			<a href="game.html">Play Game</a> <!-- includes playable game (webgl, other builds) -->
+			<a href="media.html">Media</a> <!-- includes playable game (webgl, other builds) -->
+
+			<!-- Right-aligned links -->
+			<div class="topnav-right">
+				<a href="https://github.com/TeamGrup/Grup/wiki" target="-blank">Dev Blog</a>  <!-- Link to wiki -->
+				<a href="backlog.html">Creation Process</a> <!-- will include dev log, playtesting reports, game presentation, team reflection, maybe references -->
+				<a href="credit.html">Credits</a> <!-- credits & references -->
+			</div>
+		</div>
+		
+		<div class="space"> </div>
+		<div class="media-body">
+			<h1>GRUP MEDIA</h1>
+			Here is all media for Grup that we want to share with world.
+			<h3>Trailer</h3>
+			<video controls height="450px" width="800px">
+                <source src="GrupTrailer.mp4" type="video/mp4" />
+				Please upgrade to a browser that supports the HTML5 video tag.
+            </video>
+			<h3>Screenshots</h3>
+			<div id="carousel">
+				<img id="img-container" src="screenshots" alt="Container Text" />
+				<div id="img-desc"></div>
+			</div>
+			<div id="carouselCycle">
+				<button id="prev">Prev</button><label for="auto">Auto-Cycle</label><input id="auto" type="checkbox" /><button id="next">Next</button>
+			</div>
+
+			<ul id="carouselList">
+				<!-- Insert screenshots here -->
+				<!-- <li data-img="screenshots/<imagenamehere>.png">Img Desc Here</li> -->
+				<li data-img="screenshots/grup_intro.png">A dark beginning</li>
+				<li data-img="screenshots/gruplevel6ss.png">Interact with the plants on the level</li>
+				<li data-img="screenshots/grup_jump.png">Leap crevices</li>
+				<li data-img="screenshots/pollutant_interaction.png">Clear pollutants</li>
+				<li data-img="screenshots/restore_color.png">Bring the color back to Grup's world.</li>
+			</ul>
+			<script src="carousel.js"></script>
+		</div>
+		<div class="footer">
+		<footer>
+			<small>
+				Copyright &#169; 2020, <a href="credits.html">Team Grup</a> - All original material and images pertaining to Grup
+			</small>
+		</footer>
+		</div>
+	</body>
+
+</html>
