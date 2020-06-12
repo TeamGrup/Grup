@@ -1,0 +1,11 @@
+.footer {
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	color: white;
+}
+
+a {
+	color: rgb(178, 69, 84);
+	text-decoration: none;
+}

@@ -39,3 +39,9 @@ iframe {
 	width: 50%;
 }
 
+.vine {
+	display:block;
+	align: middle;
+	margin: 0 auto;
+	height: 50px;
+}
