@@ -8,14 +8,21 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class AudioManager : MonoBehaviour {
 
+  [Header("Volume")]
+  [Range(0f, 1.0f)]
+  public float volume = 0.6f;
+
+  [Header("Audio Sources")]
   public AudioSource effectSource;
   public AudioSource musicSource;
 
   public AudioClip buttonClick;
   public AudioClip buttonHighlight;
 
+  [Header("Level Audio")]
   public AudioClip[] BackgroundMusic;
 
+  [Header("List of all active sounds in scene.")]
   public List<AudioClip> activeAudio;
 
   public static AudioManager instance = null;
@@ -42,7 +49,11 @@ public class AudioManager : MonoBehaviour {
     PlayBackgroundMusic();
   }
 
- 
+  private void Update() {
+    musicSource.volume = volume;
+  }
+
+
 
   private void Initialized() {
     activeAudio = new List<AudioClip>();
@@ -84,6 +95,7 @@ public class AudioManager : MonoBehaviour {
   public void PlayBackgroundMusic() {
     StopBackgroundMusic();
     musicSource.time = 0f;
+    musicSource.volume = volume;
     musicSource.Play();
     activeAudio.Add(musicSource.clip);
   }
