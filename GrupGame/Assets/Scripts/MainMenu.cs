@@ -37,7 +37,9 @@ public class MainMenu : MonoBehaviour {
   }
 
   public void Play() {
-    SceneManager.LoadScene(1);
+        var gs = FindObjectOfType<GlobalTrackerBehavior>();
+        gs.ResetLevels();
+        SceneManager.LoadScene(1);
   }
 
   public void PauseGame() {
